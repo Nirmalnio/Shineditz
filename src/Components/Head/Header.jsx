@@ -16,8 +16,8 @@ function Header() {
                 <li>Contact</li>
             </ul>
         </div>
-        <div>
-          
+        <div className='contactus-btn'>
+           Contact us
         </div>
     </div>
   )
