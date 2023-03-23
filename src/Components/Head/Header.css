@@ -1,0 +1,26 @@
+.headerDiv{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(111.49deg, rgba(255, 255, 255, 0.4) -8.95%, rgba(255, 255, 255, 0.4) 114%);
+    padding: 0  4vw;
+}
+
+.headerlogo{
+   width: 140px;
+   height: auto;
+}
+.headermenu ul {
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+   list-style: none;
+}
+
+.headermenu ul li{
+   margin-left: 22px;
+   font-size: 18px;
+   color:#2b1b9a;
+ }
