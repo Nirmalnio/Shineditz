@@ -14,7 +14,7 @@ function Homepage() {
           <p className='h-p-descrip'>From a simple white background to the most complex clipping paths. Get pixel perfect image editing services,  Get Flawless Edits in just 12-16 hours with Sheneditz.</p>
          </div>
          <div>
-          
+            
          </div>
     </div>
 

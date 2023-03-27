@@ -43,3 +43,37 @@
    color: #FFFFFF;
    border-radius: 20px;
 }
+
+/* Style the button that will trigger the dropdown */
+.dropbtn {
+  background-color: transparent;
+  color: #212123;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  /* margin-top: 5px; */
+}
+
+/* Show the dropdown content when the button is hovered over */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content .drpdwnlink {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change the background color of links on hover */
+.dropdown-content .drpdwnlink:hover {
+  background-color: #f1f1f1;
+}
