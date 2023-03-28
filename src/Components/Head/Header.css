@@ -4,8 +4,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(111.49deg, rgba(255, 255, 255, 0.4) -8.95%, rgba(255, 255, 255, 0.4) 114%);
+    /* background: linear-gradient(111.49deg, rgba(255, 255, 255, 0.4) -8.95%, rgba(255, 255, 255, 0.4) 114%); */
+    background:#ffffffed ;
     padding: 0  4vw;
+    z-index: 1000;
+    min-height: 80px;
 }
 
 .headerlogo{
@@ -76,4 +79,8 @@
 /* Change the background color of links on hover */
 .dropdown-content .drpdwnlink:hover {
   background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 980px){
+    
 }

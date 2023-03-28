@@ -5,6 +5,14 @@
   margin-top: 6vh;
    
 }
+.H-ptopdiv{
+    background-image: url('../../Assets//Images/bg\ 1\ \(1\).png');
+    background-position: center;
+    background-size: cover;
+    min-height: 150vh;
+}
+
+
 
 .homepage-topdiv h1{
     font-family: 'Nunito';
@@ -30,7 +38,7 @@
     margin: 0;
 }
 .h-p-secndDiv{
-    margin: 0 12vw;
+    margin: 4vh 12vw;
 }
 
 .h-p-descrip{
@@ -41,4 +49,215 @@
     line-height: 34px;
     text-align: center;
     color: #4B5563;
+}
+
+.h-p-since{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.sinceDiv{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 1px dashed #212123;
+    padding: 6px;
+}
+
+.carousalitems{
+    margin:0 15vw;
+}
+
+.sliderimg{
+    width: 100%;
+   height: auto;
+}
+
+.h-p-thirdDiv{
+ margin: 3vh 15vw;
+}
+
+.h-p-thirdDiv h3{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 70px;
+    text-align: center;
+    color: #212123;
+    margin-bottom: 12px;
+ }
+
+.h-p-thirdDiv p{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    /* or 145% */
+    
+    text-align: center;
+    
+    color: #4B5563;
+}
+
+.h-p-cardsDiv{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(365px, 1fr)) !important;
+    gap: 26px;
+    margin: 7vh 12vw;
+}
+.cardssection{
+    padding: 20px;
+    background: linear-gradient(179.41deg, #E599F8 -382.98%, rgba(194, 153, 248, 0) 67.62%, rgba(229, 153, 248, 0) 67.62%), rgba(237, 237, 237, 0.2);
+    border: 0.5px solid #E7E7E7;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+}
+
+.cardssection2{
+    padding: 20px;
+    background: linear-gradient(180.38deg, #65AB8C -360.36%, rgba(101, 171, 140, 0) 67.72%), rgba(237, 237, 237, 0.2);
+    border: 0.5px solid #E7E7E7;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+}
+.cardssection3{
+    padding: 20px;
+    background: linear-gradient(179.91deg, #F899D2 -234.78%, rgba(248, 153, 210, 0) 67.8%), rgba(217, 217, 217, 0.19);
+    border: 0.5px solid #E7E7E7;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+}
+.cardssection4{
+    padding: 20px;
+    background: linear-gradient(180.39deg, #E99172 -347.75%, rgba(233, 145, 114, 0) 67.72%), rgba(237, 237, 237, 0.19);
+    border: 0.5px solid #E7E7E7;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+}
+.cardssection5{
+    padding: 20px;
+    background: linear-gradient(180.4deg, #91CCEC -332.1%, rgba(145, 204, 236, 0) 67.72%), rgba(237, 237, 237, 0.19);
+    border: 0.5px solid #E7E7E7;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+}
+.cardssection6{
+    padding: 20px;
+    background: linear-gradient(180.34deg, #8377EB -400.34%, rgba(131, 119, 235, 0) 67.73%), rgba(237, 237, 237, 0.2);
+    border: 0.5px solid #E7E7E7;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+}
+
+.cardsechead{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    color: #212123;
+    margin-top: 12px;
+}
+
+.cardsecdesp{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #4B5563;
+    margin-top: 12px;
+}
+
+.servicesDiv{
+    margin: 7vh 12vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;       
+}
+
+.servicesDiv h3{
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 900;
+font-size: 48px;
+line-height: 70px;
+/* identical to box height, or 146% */
+
+text-align: center;
+
+color: #212123;
+margin-bottom: 10px;
+}
+
+.servicesDiv p{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    color: #4B5563;
+    margin-bottom: 30px;
+}
+
+.servisecard{
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(168.36deg, #FFEBCC -22.35%, #FF5A55 121.11%), rgba(237, 237, 237, 0.2);
+    margin: 4vh 0;
+}
+
+
+.servicetxts h5{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    color: #212123;
+    margin-bottom: 12px;
+}
+
+.servicetxts p{
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    /* or 145% */
+    text-align: start;
+    
+    color: #212123;
+}
+
+.serviceimg{
+background: rgba(255, 255, 255, 0.4);
+border-radius: 25px;
+padding: 16px;
+width: 360px;
+height: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.serviceimg img{
+  width: 100%;
+  height: auto;
+  border-radius: 20px
+}
+
+
+@media screen and (max-width: 980px){
+
 }
