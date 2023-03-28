@@ -257,6 +257,12 @@ align-items: center;
   border-radius: 20px
 }
 
+.globalDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    margin-right: 10vw;
+}
 
 @media screen and (max-width: 980px){
 
