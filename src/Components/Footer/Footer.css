@@ -1,0 +1,21 @@
+.footermaindiv{
+    position: sticky;
+    bottom: 0;
+    background: #fff;
+    padding: 40px 60px;
+}
+.footerinside{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footerlogo{
+    width: 190px;
+    height: auto;
+}
+
+.footeroptions{
+    display: flex;
+    justify-content: space-around;
+}
