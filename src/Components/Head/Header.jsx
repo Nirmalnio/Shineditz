@@ -34,9 +34,11 @@ function Header() {
                 <li>About Us</li>
           </ul>
         </div>
+        <Link to="/contact" style={{textDecoration:"none"}}>
         <div className='contactus-btn'>
            Contact us
         </div>
+        </Link> 
     </div>
   )
 }
