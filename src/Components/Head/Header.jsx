@@ -11,7 +11,7 @@ function Header() {
   return (
     <div className='headerDiv'>
         <div>
-            <img src={Logo} alt="Shineditz" className='headerlogo' />
+           <Link to="/"> <img src={Logo} alt="Shineditz" className='headerlogo' /></Link>
         </div>
         <div className='headermenu'>
             <ul>
@@ -19,10 +19,10 @@ function Header() {
                   <div className='dropbtn'>Services&nbsp;{arrow}</div>
                   <div className='dropdown-content'>
                     <Link className="drpdwnlink" to="/serives">Clipping path</Link>
-                    <Link className="drpdwnlink" to="/serives"></Link>
-                    <Link className="drpdwnlink" to="/serives"></Link>
-                    <Link className="drpdwnlink" to="/serives"></Link>
-                    <Link className="drpdwnlink" to="/serives"></Link>
+                    <Link className="drpdwnlink" to="/serives">Color correction</Link>
+                    <Link className="drpdwnlink" to="/serives">shadow correstion</Link>
+                    <Link className="drpdwnlink" to="/serives">Ghost removal</Link>
+                    <Link className="drpdwnlink" to="/serives">Image Masking</Link>
                     <Link className="drpdwnlink" to="/serives"></Link>
                     <Link className="drpdwnlink" to="/serives"></Link>
                     <Link className="drpdwnlink" to="/serives"></Link>
