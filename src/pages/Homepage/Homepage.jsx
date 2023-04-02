@@ -13,10 +13,9 @@ import serives2 from "../../Assets/Images/Photoshop-mannequin-effects.jpg"
 import serives3 from "../../Assets/Images/retouch image.jpg"
 import serives4 from "../../Assets/Images/shadow.jpg"
 import serives5 from "../../Assets/Images/color-correction.jpg"
-
-import { handicon, Quick, data, Assured, iso, price } from '../../Assets/icon';
-
-
+import global from "../../Assets/Images/globe.png"
+import { handicon,Quick,data,Assured,iso,price } from '../../Assets/icon';
+import Footer from '../../Components/Footer/Footer';
 function Homepage() {
 
   const services = [
@@ -172,9 +171,19 @@ function Homepage() {
       </div>
 
 
-      <div >
+        <div className='globalDiv'>
+       <img src={global} alt="" />
 
-      </div>
+        <div className='mt-4'>
+               <h5>See what sets Shineditz apart</h5>
+
+               <div className='globalgird'>
+
+               </div>
+        </div>
+        </div>
+
+        <Footer/>
     </div>
 
   )
