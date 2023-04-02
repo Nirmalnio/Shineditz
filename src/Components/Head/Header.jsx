@@ -11,7 +11,7 @@ function Header() {
   return (
     <div className='headerDiv'>
         <div>
-            <img src={Logo} alt="Shineditz" className='headerlogo' />
+           <Link to="/"> <img src={Logo} alt="Shineditz" className='headerlogo' /></Link>
         </div>
         <div className='headermenu'>
             <ul>
