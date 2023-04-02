@@ -206,6 +206,19 @@ margin-bottom: 10px;
     margin-bottom: 30px;
 }
 
+
+.serivescardContainer{
+    /* height: 700px;  */
+    /* overflow-y: scroll; */
+    scroll-behavior: smooth;
+    margin-top: 130px;
+}
+
+.serivescardContainer::-webkit-scrollbar {
+    display: none;
+  }
+
+
 .servisecard{
     border-radius: 30px;
     backdrop-filter: blur(10px);
@@ -213,10 +226,15 @@ margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     background: linear-gradient(168.36deg, #FFEBCC -22.35%, #FF5A55 121.11%), rgba(237, 237, 237, 0.2);
-    margin: 4vh 0;
+    margin-bottom: 20px; 
+    height: 200px;
+    margin-top: -132px;
+    transition: transform 0.4s ease-in-out;
 }
 
-
+.servisecard:hover {
+    transform: translateY(-120px); 
+  }
 .servicetxts h5{
     font-family: 'Nunito';
     font-style: normal;
@@ -264,6 +282,60 @@ align-items: center;
     margin-right: 10vw;
 }
 
+.globalrighttxt{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 60px;
+    color: #212123;
+}
+.globalgird{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)) !important;
+    gap: 30px;
+    margin-top: 10vh;
+}
+.globalservcard1{
+        border-left: 2.8px solid #95F3D9;
+        padding: 15px;
+}
+.globalservcard2{
+    border-left: 2.8px solid #D499ED;
+    padding: 15px;
+}
+.globalservcard3{
+    border-left: 2.8px solid #FFADBA;
+    padding: 15px;
+}
+
+.globalservcard4{
+    border-left: 2.8px solid #8E84FF;
+    padding: 15px;
+}
+
+.glob-count{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 70px;
+    color: #212123;
+}
+.glob-text{
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 32px;
+/* identical to box height, or 145% */
+
+
+color: #4B5563;
+}
+
 @media screen and (max-width: 980px){
+
+
 
 }

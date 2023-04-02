@@ -53,6 +53,11 @@ const services = [
   
 ]
 
+
+
+
+
+
    
   return (
     <div>
@@ -144,7 +149,7 @@ const services = [
               <h3>The image editing services you need</h3>
               <p> Experience Personalized and Creative Photo Retouching by our Skilled Editors,
                  Using Innovative Techniques that Produce Standout Results</p>
-              <div>
+              <div className='serivescardContainer'>
                {services.map((item,id)=>{
                 return(
                 <div className='servisecard' key={id} style={{background:`${item?.background}`}}> 
@@ -168,11 +173,31 @@ const services = [
        <img src={global} alt="" />
 
         <div className='mt-4'>
-               <h5>See what sets Shineditz apart</h5>
+               <h5 className='globalrighttxt'>See what sets Shineditz apart</h5>
 
                <div className='globalgird'>
-
+                      <div className='globalservcard1'>
+                        <b className='glob-count'>1,850+</b>
+                        <p className='glob-text'>Happy Customers</p>
+                      </div>
+                      <div className='globalservcard2'>
+                        <b className='glob-count'>99.7%</b>
+                        <p className='glob-text'>On Time Delivery</p>
+                      </div>
+                      <div className='globalservcard3'>
+                        <b className='glob-count'>79,000+</b>
+                        <p className='glob-text'>Edited Images</p>
+                      </div>
+                      <div className='globalservcard3'>
+                        <b className='glob-count'>120+</b>
+                        <p className='glob-text'>Happy Clients</p>
+                      </div>
                </div>
+        </div>
+
+
+        <div className='pricingplanDiv'>
+
         </div>
         </div>
 
