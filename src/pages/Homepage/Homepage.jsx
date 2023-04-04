@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Header from '../../Components/Head/Header'
 import "./homepage.css"
@@ -14,9 +14,11 @@ import serives3 from "../../Assets/Images/retouch image.jpg"
 import serives4 from "../../Assets/Images/shadow.jpg"
 import serives5 from "../../Assets/Images/color-correction.jpg"
 import global from "../../Assets/Images/globe.png"
-import { handicon,Quick,data,Assured,iso,price } from '../../Assets/icon';
+import { handicon,Quick,data,Assured,iso,price,clippingpath,masking,retouching,colorcorrection,showcorrection,Ghostmasking } from '../../Assets/icon';
 import Footer from '../../Components/Footer/Footer';
 function Homepage() {
+
+    const [price,setprice] = useState("Clipping Services")
 
   const services = [
     {
@@ -55,6 +57,56 @@ function Homepage() {
   ]
 
 
+
+const pricing = [
+   {id:1,
+    image:clippingpath,
+    name:"Clipping Services" ,
+    basic: 0.30,
+    medium: 1.50,
+    complex: 3.50
+   },
+   {id:2,
+    image:masking,
+    name:"Image Masking",
+    basic: 0.60,
+    medium: 1.50,
+    complex: 3.50 
+   },
+   {id:3,
+    image:retouching,
+    name:"Photo Retouching",
+    basic: 0.60,
+    medium: 2.50,
+    complex: 5.00 
+   },
+   {id:4,
+    image:colorcorrection,
+    name:"Color Correction",
+    basic: 0.25,
+    medium: 0.65,
+    complex: 3.50 
+   },
+   {id:5,
+    image:showcorrection,
+    name:"Shadow Correction",
+    basic: 0.20,
+    medium: 0.50,
+    complex: 0.75 
+   },
+   {id:6,
+    image:Ghostmasking,
+    name:"Ghost Masking",
+    basic: 0.65,
+    medium: 1.00,
+    complex: 1.50 
+   },
+
+]
+
+
+
+   
   return (
     <div>
       <Header />
@@ -96,8 +148,6 @@ function Homepage() {
         <div className='h-p-secndDiv'>
           <p className='h-p-descrip'>From a simple white background to the most complex clipping paths. Get pixel perfect image editing services,  Get Flawless Edits in just 12-16 hours with Sheneditz.</p>
         </div>
-
-
       </div>
 
       <div className='h-p-thirdDiv'>
@@ -151,7 +201,7 @@ function Homepage() {
         <h3>The image editing services you need</h3>
         <p> Experience Personalized and Creative Photo Retouching by our Skilled Editors,
           Using Innovative Techniques that Produce Standout Results</p>
-        <div>
+        <div className='serivescardContainer'>
           {services.map((item, id) => {
             return (
               <div className='servisecard' key={id} style={{ background: `${item?.background}` }}>
@@ -170,19 +220,85 @@ function Homepage() {
         </div>
       </div>
 
-
+{/* <<========Global customer=> */}
         <div className='globalDiv'>
        <img src={global} alt="" />
 
-        <div className='mt-4'>
-               <h5>See what sets Shineditz apart</h5>
+        <div className='globalbtm'>
+               <h5 className='globalrighttxt'>See what sets Shineditz apart</h5>
 
                <div className='globalgird'>
-
+                      <div className='globalservcard1'>
+                        <b className='glob-count'>1,850+</b>
+                        <p className='glob-text'>Happy Customers</p>
+                      </div>
+                      <div className='globalservcard2'>
+                        <b className='glob-count'>99.7%</b>
+                        <p className='glob-text'>On Time Delivery</p>
+                      </div>
+                      <div className='globalservcard4'>
+                        <b className='glob-count'>79,000+</b>
+                        <p className='glob-text'>Edited Images</p>
+                      </div>
+                      <div className='globalservcard3'>
+                        <b className='glob-count'>120+</b>
+                        <p className='glob-text'>Happy Clients</p>
+                      </div>
                </div>
         </div>
         </div>
+        
+        {/*<<======= princing ==========>> */}
 
+        <div className='pricingplanDiv'>
+          <h5>Choose a plan that best suits you</h5>
+          <div className='pricing-div'>
+           
+              <div className='pricingItems'>
+                    {pricing?.map((items,id)=>{
+                      return(
+                        <div className={price===items?.name?'pricingitemActive':'pricingitem'}
+                         onClick={()=>setprice(items?.name)}
+                         key={id}>
+                              <div>{items?.image}</div>
+                              <span>{items?.name}</span>
+                        </div>
+                      )
+                    })
+                    }
+              </div>
+              
+              <div className='pricingdetails'>
+                <div className='pricinghead'>
+                      <span>{price} - Pricing Details</span>
+                </div>
+                <div>
+
+                  <div className='d-flex justify-content-between align-items-center pricing-box'>
+                      <p>Basic</p>
+                      <span><b style={{fontSize:"22px"}}>₹ 0.30</b>/ per image</span>
+                  </div>
+                  <div className='d-flex justify-content-between align-items-center pricing-box'>
+                      <p>Medium</p>
+                      <span><b style={{fontSize:"22px"}}>₹ 0.30</b>/ per image</span>
+                  </div>
+                  <div className='d-flex justify-content-between align-items-center pricing-box'>
+                      <p>Complex</p>
+                      <span><b style={{fontSize:"22px"}}>₹ 0.30</b>/ per image</span>
+                  </div>
+
+                </div>
+
+                <Link to='/contact' style={{textDecoration:"none"}}> 
+                <div className='contactusbtn'>
+                Contact Us
+                </div>
+                  </Link>
+
+              </div>
+
+          </div>
+        </div>
         <Footer/>
     </div>
 
