@@ -30,7 +30,7 @@ function Header() {
                 </li>
                 
                 <li>Samples</li>
-                <li>Pricing</li>
+                <Link to="/pricing" style={{textDecoration:"none"}} ><li>Pricing</li> </Link>
                 <li>About Us</li>
           </ul>
         </div>

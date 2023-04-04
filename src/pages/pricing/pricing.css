@@ -1,0 +1,74 @@
+.containerdiv{
+    padding: 0  4vw;
+}
+.headdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6vh;
+    text-align: center;
+    padding: 0 4vw;
+}
+
+.headdiv h1 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 58px;
+    line-height: 40px;
+    text-align: center;
+    color: #212123;
+    margin: 3vh 0
+}
+
+.headdiv p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    color: #212123;
+}
+
+.cardsec {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+
+}
+
+.buttoncards {
+    box-sizing: border-box;
+    box-shadow: 4px 4px 8px rgba(215, 215, 215, 0.25);
+    border-radius: 15px;
+    background-color: white;
+    width: 200px;
+    height: 100px;
+}
+.card2{
+    display:flex;
+    align-items: center;
+}
+.button1 {
+    margin:0 25%;
+    background: radial-gradient(293.15% 5244.37% at 100% 121.13%, #FF9A00 0%, #FD331F 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    width: 555px;
+    height: 60px;
+    border:none;
+    border-radius: 30px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    
+    /* identical to box height, or 136% */
+
+    color: #F3F3F3;
+}
