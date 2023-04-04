@@ -2,12 +2,24 @@ import React from 'react'
 import "./Header.css"
 import Logo from '../../Assets/Images/Shine Logo 3.jpg'
 import { Link } from 'react-router-dom'
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import {menuicon} from "../../Assets/icon"
+import { GiHamburgerMenu} from "react-icons/gi";
+import { useState,useEffect } from "react"
 function Header() {
+
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
 
   const arrow = <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
   <path d="M12 16.5l-6-6 1.5-1.5 4.5 4.5 4.5-4.5 1.5 1.5z" fill="currentColor"/>
 </svg>
-                                                        
+                                      
+  
   return (
     <div className='headerDiv'>
         <div>
@@ -39,6 +51,20 @@ function Header() {
            Contact us
         </div>
         </Link> 
+          <div className='mobmenu' onClick={handleShow}>
+              <GiHamburgerMenu/>
+          </div>
+
+          <Offcanvas show={show} onHide={handleClose} responsive="lg" placement='end'>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Shineditz</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
+        </Offcanvas.Body>
+      </Offcanvas>
+
     </div>
   )
 }

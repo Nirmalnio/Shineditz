@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import Header from "../../Components/Head/Header";
 import './pricing.css';
-import basic from "../../Assets/Images/retouch image.jpg";
+import basic from "../../Assets/Images/bag.jpg";
 
 
 function Pricing() {
@@ -46,9 +46,12 @@ function Pricing() {
                         <p>0.30<small>per image</small> </p>
                         <img src={basic}></img>
                     </div>
-                    <button className='button1' type="submit">Send message</button>
 
                 </div>
+                <button className='button2' type="submit">View Samples</button>
+
+                <button className='button1' type="submit">Contact US</button>
+
             </div>
         </div>
     )

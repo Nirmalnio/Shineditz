@@ -82,7 +82,20 @@
 .dropdown-content .drpdwnlink:hover {
   background-color: #f1f1f1;
 }
+ 
+.mobmenu{
+  display: none;
+}
+@media screen and (max-width: 860px){
+    .contactus-btn{
+      display: none;
+    }
+    .headermenu{
+      display: none;
+    }
 
-@media screen and (max-width: 980px){
-    
+    .mobmenu{
+     display: block;
+    }
+
 }

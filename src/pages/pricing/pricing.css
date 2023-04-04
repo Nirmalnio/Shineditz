@@ -1,6 +1,7 @@
-.containerdiv{
-    padding: 0  4vw;
+.containerdiv {
+    padding: 0 4vw;
 }
+
 .headdiv {
     display: flex;
     flex-direction: column;
@@ -49,26 +50,42 @@
     width: 200px;
     height: 100px;
 }
-.card2{
-    display:flex;
+
+.card2 {
+    display: flex;
     align-items: center;
 }
+
 .button1 {
-    margin:0 25%;
+    margin: 0 25%;
     background: radial-gradient(293.15% 5244.37% at 100% 121.13%, #FF9A00 0%, #FD331F 100%)
         /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
     ;
     width: 555px;
     height: 60px;
-    border:none;
+    border: none;
     border-radius: 30px;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 30px;
-    
+
     /* identical to box height, or 136% */
 
     color: #F3F3F3;
+}
+
+.button2 {
+
+    background: #FFFFFF;
+    box-shadow: 4px 4px 8px rgba(215, 215, 215, 0.25);
+    border-radius: 20px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 70px;
+    text-align: center;
+    color: #212123;
 }
