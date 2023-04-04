@@ -52,37 +52,31 @@
     font-family: 'Nunito';
     src: url('./Nunito-Italic.ttf') format('truetype');
     font-weight: normal;
-    font-style: italic;
   }
 
   @font-face {
     font-family: 'Nunito';
     src: url('./Nunito-ExtraLightItalic.ttf') format('truetype');
     font-weight: normal;
-    font-style: italic;
   }
   @font-face {
     font-family: 'Nunito';
     src: url('./Nunito-Regular.ttf') format('truetype');
     font-weight: normal;
-    font-style: italic;
   }
   @font-face {
     font-family: 'Nunito';
     src: url('./Nunito-Medium.ttf') format('truetype');
     font-weight: normal;
-    font-style: italic;
   }
 
   @font-face {
     font-family: 'Nunito';
     src: url('./Nunito-MediumItalic.ttf') format('truetype');
     font-weight: normal;
-    font-style: italic;
   }
   @font-face {
     font-family: 'Nunito';
     src: url('./Nunito-SemiBold.ttf') format('truetype');
     font-weight: normal;
-    font-style: italic;
   }
