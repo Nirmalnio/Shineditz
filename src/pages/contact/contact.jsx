@@ -88,11 +88,11 @@ function Contact() {
         <div className='carddisplay'>
           <div className='contactcard'>
             <h3 cardh6>Locate us </h3>
-            <small>No 14, 17th Main Rd, Sector 3, HSR Layout,
-              Bengaluru,Karnataka 560102</small>
+            <small>No 662, 9th Main Rd, Sector 7, HSR Layout,
+              Bengaluru,Karnataka 560 102</small>
               <h3>Ring us,</h3>
               <small>
-              +91 098349 38257
+              +91 99725 64671
               </small>
               <h3>Follow Us</h3>
 
@@ -102,9 +102,9 @@ function Contact() {
           <div className='contactcard'>
           <h3 cardh6>Mails for you,</h3>
             <h6>Orders</h6>
-            <d className='mail' >ordersshineditz@gmail.com</d>
+            <d className='mail' >info@shineditz.com</d>
             <h6>Support</h6>
-            <d className='mail'>support@shineditz.com </d> <br></br>
+            <d className='mail'>shhineditz@gmail.com </d> <br></br>
 
             <button className='button2'>Check out the services we offer</button>
           </div>
