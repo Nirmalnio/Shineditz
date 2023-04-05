@@ -15,9 +15,9 @@
 
 
 .homepage-topdiv h1{
-    font-family: 'Nunito';
+    font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 58px;
     line-height: 40px;
     text-align: center;
@@ -26,7 +26,7 @@
 }
 
 .homepage-topdiv  h2{
-    font-family: 'Nunito';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 900;
     font-size: 60px;
@@ -80,7 +80,7 @@
 }
 
 .h-p-thirdDiv h3{
-    font-family: 'Nunito';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 900;
     font-size: 48px;
@@ -182,17 +182,14 @@
 }
 
 .servicesDiv h3{
-font-family: 'Nunito';
-font-style: normal;
-font-weight: 900;
-font-size: 48px;
-line-height: 70px;
-/* identical to box height, or 146% */
-
-text-align: center;
-
-color: #212123;
-margin-bottom: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 70px;
+    text-align: center;
+    color: #212123;
+    margin-bottom: 10px;
 }
 
 .servicesDiv p{

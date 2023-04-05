@@ -12,7 +12,7 @@
 }
 
 .headdiv h1 {
-    font-family: 'Nunito';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 900;
     font-size: 58px;
@@ -65,7 +65,7 @@
     font-style: normal;
     font-weight: 900;
     font-size: 22px;
-    line-height: 70px;
+    line-height: 35px;
     /* identical to box height, or 318% */
 
     text-align: center;
