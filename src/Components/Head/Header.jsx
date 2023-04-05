@@ -54,7 +54,7 @@ function Header() {
           <div className='mobmenu' onClick={handleShow}>
               <GiHamburgerMenu/>
           </div>
-
+{/* 
           <Offcanvas show={show} onHide={handleClose} responsive="lg" placement='end'>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Shineditz</Offcanvas.Title>
@@ -63,7 +63,7 @@ function Header() {
           Some text as placeholder. In real life you can have the elements you
           have chosen. Like, text, images, lists, etc.
         </Offcanvas.Body>
-      </Offcanvas>
+      </Offcanvas> */}
 
     </div>
   )
