@@ -27,9 +27,15 @@
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
-    line-height: 32px;
+    /* line-height: 32px; */
     text-align: center;
     color: #212123;
+}
+
+.gridbox {
+    background: #FFFFFF;
+    box-shadow: 4px 4px 8px rgba(215, 215, 215, 0.25);
+    border-radius: 20px;
 }
 
 .cardsec {
@@ -42,6 +48,29 @@
 
 }
 
+.buttoncardsactive {
+    background: radial-gradient(293.15% 5244.37% at 100% 121.13%, rgba(255, 154, 0, 0.2) 0%, rgba(253, 51, 31, 0.2) 100%);
+    ;
+    box-shadow: 4px 4px 8px rgba(215, 215, 215, 0.25);
+    border-radius: 15px;
+    width: 200px;
+    height: 100px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 70px;
+    /* identical to box height, or 318% */
+
+    text-align: center;
+
+    /* black 1 */
+
+    color: #212123;
+    border-color: #FF9A00;
+}
+
+
 .buttoncards {
     box-sizing: border-box;
     box-shadow: 4px 4px 8px rgba(215, 215, 215, 0.25);
@@ -53,7 +82,9 @@
 
 .card2 {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
 }
 
 .button1 {
@@ -61,7 +92,7 @@
     background: radial-gradient(293.15% 5244.37% at 100% 121.13%, #FF9A00 0%, #FD331F 100%)
         /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
     ;
-    width: 555px;
+    width: 350px;
     height: 60px;
     border: none;
     border-radius: 30px;
@@ -70,22 +101,62 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 30px;
-
-    /* identical to box height, or 136% */
-
     color: #F3F3F3;
 }
 
-.button2 {
-
+.button3 {
     background: #FFFFFF;
+    border-color: #FF9A00;
+    width: 350px;
+    height: 60px;
     box-shadow: 4px 4px 8px rgba(215, 215, 215, 0.25);
-    border-radius: 20px;
+    border-radius: 30px;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 900;
     font-size: 22px;
+    text-align: center;
+    color: #212123;
+}
+
+.gridtitle {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 70px;
+    /* identical to box height, or 350% */
+
+    text-align: center;
+
+    /* black 1 */
+
+    color: #212123;
+}
+
+.basic {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 42px;
     line-height: 70px;
     text-align: center;
     color: #212123;
+}
+
+.smalltxt {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #4B5563;
+}
+
+.submitbutton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
