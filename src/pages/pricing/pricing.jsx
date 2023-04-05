@@ -7,21 +7,21 @@ import schoolbag from "../../Assets/Images/schoolbag.jpg";
 import earings from "../../Assets/Images/earrings.jpg";
 import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
+// import Box from '@mui/material/Box';
+// import Paper from '@mui/material/Paper';
 import {BiRupee} from "react-icons/bi";
 
 
 
 function Pricing() {
-    const Item = styled(Paper)(({ theme }) => ({
-        backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-        ...theme.typography.body2,
-        padding: theme.spacing(0),
-        textAlign: 'center',
-        borderRadius:'10',
-        color: theme.palette.text.secondary,
-    }));
+    // const Item = styled(Paper)(({ theme }) => ({
+    //     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+    //     ...theme.typography.body2,
+    //     padding: theme.spacing(0),
+    //     textAlign: 'center',
+    //     borderRadius:'10',
+    //     color: theme.palette.text.secondary,
+    // }));
 
 
     return (
@@ -52,7 +52,7 @@ function Pricing() {
                         <button className="buttoncards">Ghost Mannequin</button>
                     </div>
                 </div>                
-                <div className="gridbox">
+                {/* <div className="gridbox">
                     <Grid container spacing={0} mt={10} mb={5} mx={4}>
                         <Grid item xs={4} md={4}>
                             <Item>
@@ -80,7 +80,7 @@ function Pricing() {
                         </Grid>
 
                     </Grid>
-                </div>
+                </div> */}
                 <div className="submitbutton" >
                    <div> <button className='button3' type="submit">View Samples</button></div>
                    <div> <button className='button1' type="submit">Contact US</button></div>

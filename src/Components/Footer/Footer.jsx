@@ -29,7 +29,6 @@ function Footer() {
 
             <div>
                 <b>Legal</b>
-
                 <span>Terms & Conditions</span>
                  <span>Privacy Piolicy</span>
             </div>

@@ -57,3 +57,24 @@ text-align: start;
     justify-content: space-between;
     padding: 12px;
 }
+
+@media screen and (max-width: 680px){
+ .footerinside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .footeroptions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .footeroptions div{
+   margin: 2vh 0px; 
+} 
+
+.footeroptions div span {
+  margin: 1vh 0;
+
+}
+}

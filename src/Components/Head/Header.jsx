@@ -21,6 +21,7 @@ function Header() {
                                       
   
   return (
+    <>
     <div className='headerDiv'>
         <div>
            <Link to="/"> <img src={Logo} alt="Shineditz" className='headerlogo' /></Link>
@@ -54,18 +55,17 @@ function Header() {
           <div className='mobmenu' onClick={handleShow}>
               <GiHamburgerMenu/>
           </div>
+    </div>
 
-          <Offcanvas show={show} onHide={handleClose} responsive="lg" placement='end'>
+    <Offcanvas show={show} onHide={handleClose} responsive="lg" placement='end'>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Shineditz</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
+         
         </Offcanvas.Body>
-      </Offcanvas>
-
-    </div>
+    </Offcanvas> 
+    </>
   )
 }
 
