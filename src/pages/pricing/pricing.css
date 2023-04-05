@@ -32,11 +32,17 @@
     color: #212123;
 }
 
-.gridbox {
+.flexbox {
+    padding: 20px;
+    margin: 30px;
     background: #FFFFFF;
     box-shadow: 4px 4px 8px rgba(215, 215, 215, 0.25);
     border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
 }
+
 
 .cardsec {
     display: flex;
@@ -142,6 +148,12 @@
     line-height: 70px;
     text-align: center;
     color: #212123;
+    /* display: flex;
+    align-items: center; */
+}
+.flexbox p{
+    text-align: center;
+    
 }
 
 .smalltxt {
