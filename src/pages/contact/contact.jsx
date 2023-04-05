@@ -1,5 +1,4 @@
 import { React, useState } from 'react'
-import { Container } from 'react-bootstrap'
 import Header from '../../Components/Head/Header'
 import "./contact.css"
 
@@ -119,6 +118,7 @@ function Contact() {
 
 
       </section >
+      
 
     </div >
   )
