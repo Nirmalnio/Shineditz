@@ -1,7 +1,7 @@
 import { React, useState } from 'react'
 import Header from '../../Components/Head/Header'
 import "./contact.css"
-
+import Footer from "../../Components/Footer/Footer"
 function Contact() {
 
   const [name, setName] = useState("");
@@ -73,6 +73,7 @@ function Contact() {
                   placeholder='Type your message*'
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
+                  style={{minHeight:"50px",maxHeight:"120px",padding:"10px 15px"}}
                 />
               </div>
 
@@ -118,7 +119,9 @@ function Contact() {
 
 
       </section >
-      
+      <div className='mt-2'>
+        <Footer/>
+      </div>
 
     </div >
   )
