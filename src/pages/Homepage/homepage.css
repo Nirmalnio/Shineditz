@@ -15,9 +15,9 @@
 
 
 .homepage-topdiv h1{
-    font-family: 'Nunito';
+    font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 58px;
     line-height: 40px;
     text-align: center;
@@ -26,7 +26,7 @@
 }
 
 .homepage-topdiv  h2{
-    font-family: 'Nunito';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 900;
     font-size: 60px;
@@ -80,7 +80,7 @@
 }
 
 .h-p-thirdDiv h3{
-    font-family: 'Nunito';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 900;
     font-size: 48px;
@@ -182,17 +182,14 @@
 }
 
 .servicesDiv h3{
-font-family: 'Nunito';
-font-style: normal;
-font-weight: 900;
-font-size: 48px;
-line-height: 70px;
-/* identical to box height, or 146% */
-
-text-align: center;
-
-color: #212123;
-margin-bottom: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 70px;
+    text-align: center;
+    color: #212123;
+    margin-bottom: 10px;
 }
 
 .servicesDiv p{
@@ -296,7 +293,7 @@ align-items: center;
 }
 .globalgird{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)) !important;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
     gap: 30px;
     margin-top: 10vh;
 }
@@ -339,7 +336,7 @@ align-items: center;
     background: linear-gradient(111.49deg, rgb(231 231 231 / 48%) -8.95%, rgba(255, 255, 255, 0.4) 114%);
     backdrop-filter: blur(50px);
     padding: 15px;
-    margin: 8vh 15vw;
+    margin: 8vh 12vw;
     text-align: center;
     border-radius: 30px;
 }
@@ -405,6 +402,7 @@ align-items: center;
     background: #FFFFFF;
     border-radius: 20px;
     padding: 15px;
+    margin-left: 1vw;
 }
 
 .pricinghead{
@@ -465,6 +463,97 @@ color: #4B5563
 
 @media screen and (max-width: 980px){
 
+    .pricing-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 880px){
+  
+ .globalDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+ }
+ 
+ .pricing-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .pricingplanDiv{
+    margin: 5vh 6vw;
+ }
+
+ .pricingItems{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.globalimg{
+    width: 100%;
+    height: auto;
+}
 
 
+.homepage-topdiv h1{
+  font-size: 32px;
+}
+
+.homepage-topdiv h2{
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.h-p-secndDiv{
+    margin: 4vh 5vw;
+}
+
+.h-p-cardsDiv{
+    margin: 10vh 4vw;
+}
+
+.H-ptopdiv{
+ min-height: 110vh;
+}
+
+.h-p-thirdDiv h3{
+ font-size: 34px;
+ line-height: 40px;
+ width: 100%;
+}
+
+.servicesDiv h3{
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.servicesDiv{
+    margin: 10vh 5vw;
+}
+
+.serivescardContainer{
+    margin-top: 70px;
+}
+.servisecard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    margin-top: 0px;
+}
+.servicetxts h5{
+    font-size: 28px;
+}
+
+.servicetxts p{
+    font-size: 18px;
+    line-height: 26px;
+}
 }

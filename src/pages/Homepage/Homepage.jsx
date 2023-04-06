@@ -106,7 +106,11 @@ const pricing = [
 
 
 
-   
+const Option = pricing.filter(item=>item?.name===price)
+
+console.log(Option,"options");
+
+
   return (
     <div>
       <Header />
@@ -222,7 +226,7 @@ const pricing = [
 
 {/* <<========Global customer=> */}
         <div className='globalDiv'>
-       <img src={global} alt="" />
+       <img src={global} alt=""  className='globalimg' />
 
         <div className='globalbtm'>
                <h5 className='globalrighttxt'>See what sets Shineditz apart</h5>
@@ -276,15 +280,15 @@ const pricing = [
 
                   <div className='d-flex justify-content-between align-items-center pricing-box'>
                       <p>Basic</p>
-                      <span><b style={{fontSize:"22px"}}>₹ 0.30</b>/ per image</span>
+                      <span><b style={{fontSize:"22px"}}>$ {Option[0]?.basic}</b>/ per image</span>
                   </div>
                   <div className='d-flex justify-content-between align-items-center pricing-box'>
                       <p>Medium</p>
-                      <span><b style={{fontSize:"22px"}}>₹ 0.30</b>/ per image</span>
+                      <span><b style={{fontSize:"22px"}}>$ {Option[0]?.medium}</b>/ per image</span>
                   </div>
                   <div className='d-flex justify-content-between align-items-center pricing-box'>
                       <p>Complex</p>
-                      <span><b style={{fontSize:"22px"}}>₹ 0.30</b>/ per image</span>
+                      <span><b style={{fontSize:"22px"}}>$ {Option[0]?.complex}</b>/ per image</span>
                   </div>
 
                 </div>
