@@ -31,14 +31,12 @@ function Header() {
                 <li className='dropdown'>
                   <div className='dropbtn'>Services&nbsp;{arrow}</div>
                   <div className='dropdown-content'>
-                    <Link className="drpdwnlink" to="/serives">Clipping path</Link>
-                    <Link className="drpdwnlink" to="/serives">Color correction</Link>
-                    <Link className="drpdwnlink" to="/serives">shadow correstion</Link>
-                    <Link className="drpdwnlink" to="/serives">Ghost removal</Link>
-                    <Link className="drpdwnlink" to="/serives">Image Masking</Link>
-                    <Link className="drpdwnlink" to="/serives"></Link>
-                    <Link className="drpdwnlink" to="/serives"></Link>
-                    <Link className="drpdwnlink" to="/serives"></Link>
+                    <Link className="drpdwnlink" to="/services">Clipping path</Link>
+                    <Link className="drpdwnlink" to="/services">Color correction</Link>
+                    <Link className="drpdwnlink" to="/services">shadow correstion</Link>
+                    <Link className="drpdwnlink" to="/services">Ghost removal</Link>
+                    <Link className="drpdwnlink" to="/services">Image Masking</Link>
+
                   </div>
                 </li>
                 
@@ -57,12 +55,21 @@ function Header() {
           </div>
     </div>
 
-    <Offcanvas show={show} onHide={handleClose} responsive="lg" placement='end'>
+    <Offcanvas show={show} onHide={handleClose} /* responsive="lg" */ placement='end'>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Shineditz</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-         
+         <div className='p-3 d-flex flex-column align-items-center mobdiv'>
+               <Link  to="/pricing"><div className='mob-options'>Pricing</div></Link> 
+               <Link to="/services"><div  className='mob-options'>services</div></Link> 
+               <Link to="/contact" style={{textDecoration:"none"}}>
+                  <div className='contactus-btn2'>
+                    Contact us
+                  </div>
+                </Link>  
+
+         </div>
         </Offcanvas.Body>
     </Offcanvas> 
     </>
