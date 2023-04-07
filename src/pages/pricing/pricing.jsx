@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import Header from "../../Components/Head/Header";
+import Footer from "../../Components/Footer/Footer";
 import './pricing.css';
 import bag from "../../Assets/Images/bag.jpg";
 import schoolbag from "../../Assets/Images/schoolbag.jpg";
@@ -124,7 +125,9 @@ function Pricing() {
             {/* <div>
                 <h1 style={{ marginBottom: 100,marginTop:100 }} className="headdiv">Frequently Asked Questions</h1>
             </div> */}
+            <Footer/>
         </div>
+
     )
 
 }

@@ -79,7 +79,7 @@ function Contact() {
             </div>
 
 
-            <button className='button1' type="submit">Send message</button>
+            <button className='contactbutton' type="submit">Send message</button>
           </form>
         </div>
 

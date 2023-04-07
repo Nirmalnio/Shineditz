@@ -12,8 +12,12 @@
 }
 
 .headerlogo{
-   width: 140px;
+   width: 250px;
    height: auto;
+}
+.AszenLogo{
+   width:30%;
+   height:auto;
 }
 .headermenu ul {
    display: flex;

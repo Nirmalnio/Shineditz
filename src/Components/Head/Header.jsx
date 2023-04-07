@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Header.css"
 import Logo from '../../Assets/Images/Shine Logo 3.jpg'
+import AszenLogo from '../../Assets/Images/Aszen Logo 1.jpg'
 import { Link } from 'react-router-dom'
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import {menuicon} from "../../Assets/icon"
@@ -24,7 +25,8 @@ function Header() {
     <>
     <div className='headerDiv'>
         <div>
-           <Link to="/"> <img src={Logo} alt="Shineditz" className='headerlogo' /></Link>
+           <Link to="/"> <img src={Logo} alt="Shineditz" className='headerlogo' /></Link><br/>
+           <small style={{padding:"20px"}} >powered by <img src={AszenLogo} className='AszenLogo' alt="Aszentech"/> </small>
         </div>
         <div className='headermenu'>
             <ul>

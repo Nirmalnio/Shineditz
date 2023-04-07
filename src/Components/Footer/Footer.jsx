@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../../Assets/Images/Shine Logo 3.jpg'
+import AszenLogo from '../../Assets/Images/Aszen Logo 1.jpg'
 import { Link } from 'react-router-dom'
 import "./Footer.css"
 function Footer() {
@@ -9,7 +10,10 @@ function Footer() {
       <div className='footerinside'>
            <div>
                 <img src={Logo} alt="" className='footerlogo'/> <br />
-                <span className='footerlogotxt'>Enhancing photo images</span>
+                <span className='footerlogotxt'>Enhancing photo images</span> 
+               <div style={{padding:"20px"}}> <small >powered by <img src={AszenLogo} className='AszenLogo' alt="Aszentech"/> </small>
+
+           </div>
            </div>
 
            <div className='footeroptions'>
