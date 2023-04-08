@@ -463,7 +463,8 @@ color: #4B5563
 }
 
 .reviewsdiv{
-    margin-top: 70px;
+    margin: 70px 0;
+
 }
 .reviewsdiv h5{
     font-family: 'Nunito';
