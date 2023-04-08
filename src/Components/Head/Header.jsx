@@ -33,14 +33,14 @@ function Header() {
                 <li className='dropdown'>
                   <div className='dropbtn'>Services&nbsp;{arrow}</div>
                   <div className='dropdown-content'>
-                    <Link className="drpdwnlink" to="/serives">Clipping path</Link>
-                    <Link className="drpdwnlink" to="/serives">Color correction</Link>
-                    <Link className="drpdwnlink" to="/serives">shadow correstion</Link>
-                    <Link className="drpdwnlink" to="/serives">Ghost removal</Link>
-                    <Link className="drpdwnlink" to="/serives">Image Masking</Link>
-                    <Link className="drpdwnlink" to="/serives"></Link>
-                    <Link className="drpdwnlink" to="/serives"></Link>
-                    <Link className="drpdwnlink" to="/serives"></Link>
+                    <Link className="drpdwnlink" to="/services">Clipping path</Link>
+                    <Link className="drpdwnlink" to="/services">Color correction</Link>
+                    <Link className="drpdwnlink" to="/services">shadow correstion</Link>
+                    <Link className="drpdwnlink" to="/services">Ghost removal</Link>
+                    <Link className="drpdwnlink" to="/services">Image Masking</Link>
+                    <Link className="drpdwnlink" to="/services"></Link>
+                    <Link className="drpdwnlink" to="/services"></Link>
+                    <Link className="drpdwnlink" to="/services"></Link>
                   </div>
                 </li>
                 

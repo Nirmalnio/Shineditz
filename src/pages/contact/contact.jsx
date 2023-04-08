@@ -1,5 +1,6 @@
 import { React, useState } from 'react'
 import Header from '../../Components/Head/Header'
+import Footer from '../../Components/Footer/Footer';
 import "./contact.css"
 
 function Contact() {
@@ -109,6 +110,7 @@ function Contact() {
           </div>
 
         </div>
+        <Footer/>
 
 
 
