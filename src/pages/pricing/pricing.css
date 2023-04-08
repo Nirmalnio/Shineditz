@@ -145,6 +145,7 @@
     line-height: 70px;
     text-align: center;
     color: #212123;
+    justify-content: center;
     /* display: flex;
     align-items: center; */
 }

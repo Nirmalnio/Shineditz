@@ -125,9 +125,9 @@ function Pricing() {
             {/* <div>
                 <h1 style={{ marginBottom: 100,marginTop:100 }} className="headdiv">Frequently Asked Questions</h1>
             </div> */}
-
             <Footer/>
         </div>
+
     )
 
 }

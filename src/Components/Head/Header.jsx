@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Header.css"
 import Logo from '../../Assets/Images/Shine Logo 3.jpg'
+import AszenLogo from '../../Assets/Images/Aszen Logo 1.jpg'
 import { Link } from 'react-router-dom'
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import {menuicon} from "../../Assets/icon"
@@ -31,7 +32,8 @@ function Header() {
     <>
     <div className='headerDiv'>
         <div>
-           <Link to="/"> <img src={Logo} alt="Shineditz" className='headerlogo' /></Link>
+           <Link to="/"> <img src={Logo} alt="Shineditz" className='headerlogo' /></Link><br/>
+           <small style={{marginLeft:"20px",marginTop:"-10px"}}>powered by <img src={AszenLogo} className='AszenLogo' alt="Aszentech"/></small>
         </div>
         <div className='headermenu'>
             <ul>
@@ -59,9 +61,9 @@ function Header() {
                   </div>
                 </li>
                 
-                <li>Samples</li>
+                <Link to='/samples' style={{textDecoration:"none"}}><li>Samples</li></Link>
                 <Link to="/pricing" style={{textDecoration:"none"}} ><li>Pricing</li> </Link>
-                <li>About Us</li>
+                <Link to="/aboutus" style={{textDecoration:"none"}}><li>About Us</li></Link>
           </ul>
         </div>
         <Link to="/contact" style={{textDecoration:"none"}}>
@@ -70,7 +72,7 @@ function Header() {
         </div>
         </Link> 
           <div className='mobmenu' onClick={handleShow}>
-              <GiHamburgerMenu/>
+              <GiHamburgerMenu size={30}/>
           </div>
     </div>
 

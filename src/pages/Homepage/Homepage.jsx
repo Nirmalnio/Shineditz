@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import Header from '../../Components/Head/Header'
 import "./homepage.css"
-
+// import {useHistory} from "react-router"
 import Carousel from 'react-bootstrap/Carousel';
 import silder1 from "../../Assets/Images/Banner 1.jpg"
 import silder2 from "../../Assets/Images/Banner 2.jpg"
@@ -19,7 +19,9 @@ import Footer from '../../Components/Footer/Footer';
 function Homepage() {
 
     const [price,setprice] = useState("Clipping Services")
+    
 
+    // const router = useHistory()
   const services = [
     {
       id: 1,
@@ -56,7 +58,7 @@ function Homepage() {
 
   ]
 
-
+   
 
 const pricing = [
    {id:1,
@@ -208,7 +210,8 @@ console.log(Option,"options");
         <div className='serivescardContainer'>
           {services.map((item, id) => {
             return (
-              <div className='servisecard' key={id} style={{ background: `${item?.background}` }}>
+              <div /* onClick={()=>router.push("/serives")} */
+               className='servisecard' key={id} style={{ background: `${item?.background}` }}>
                 <div className='servicetxts'>
                   <h5>{item?.headin}</h5>
                   <p>{item?.desp}</p>
@@ -280,15 +283,15 @@ console.log(Option,"options");
 
                   <div className='d-flex justify-content-between align-items-center pricing-box'>
                       <p>Basic</p>
-                      <span><b style={{fontSize:"22px"}}>$ {Option[0]?.basic}</b>/ per image</span>
+                      <span><b style={{fontSize:"22px"}}>$ {Option[0]?.basic.toFixed(2)}</b>/ per image</span>
                   </div>
                   <div className='d-flex justify-content-between align-items-center pricing-box'>
                       <p>Medium</p>
-                      <span><b style={{fontSize:"22px"}}>$ {Option[0]?.medium}</b>/ per image</span>
+                      <span><b style={{fontSize:"22px"}}>$ {Option[0]?.medium.toFixed(2)}</b>/ per image</span>
                   </div>
                   <div className='d-flex justify-content-between align-items-center pricing-box'>
                       <p>Complex</p>
-                      <span><b style={{fontSize:"22px"}}>$ {Option[0]?.complex}</b>/ per image</span>
+                      <span><b style={{fontSize:"22px"}}>$ {Option[0]?.complex.toFixed(2)}</b>/ per image</span>
                   </div>
 
                 </div>
@@ -302,6 +305,81 @@ console.log(Option,"options");
               </div>
 
           </div>
+        </div>
+
+
+        <div className='reviewsdiv'>
+          <h5>1,850+ satisfied customers</h5>
+
+          <div className='reviewsec'>
+          <marquee width="100%" direction="left" height="auto" className="d-flex ">
+            <div className='d-flex justify-content-between'>
+            <div className='reviewcard'> 
+              <div>
+              <b>Farah Mohan</b>
+              <span>I absolutely loved their edits.</span>
+              </div>
+                <small>23/05/2020</small>
+            </div>
+
+            <div className='reviewcard'> 
+              <div>
+              <b>Saraswathi</b>
+              <span>Good services.</span>
+              </div>
+                <small>23/05/2020</small>
+            </div>
+
+            <div className='reviewcard'> 
+              <div>
+              <b> Mohan</b>
+              <span>I absolutely on time delivery.</span>
+              </div>
+                <small>23/05/2020</small>
+            </div>
+
+            </div>
+           
+
+        
+          </marquee>
+                      <br/>
+          <marquee width="100%" direction="right" height="auto" className="d-flex ">
+            <div className='d-flex justify-content-between'>
+            <div className='reviewcard'> 
+              <div>
+              <b>Fharan steve</b>
+              <span>On time delivery. good services </span>
+              </div>
+                <small>23/05/2020</small>
+            </div>
+
+            <div className='reviewcard'> 
+              <div>
+              <b>Juliana Steven</b>
+              <span>I absolutely loved their edits.</span>
+              </div>
+                <small>23/05/2020</small>
+            </div>
+
+            <div className='reviewcard'> 
+              <div>
+              <b>thomas irfan</b>
+              <span>Fast and quality image editing.
+                <br/> i loved their work</span>
+              </div>
+                <small>23/05/2020</small>
+            </div>
+
+            </div>
+           
+
+        
+          </marquee>
+
+
+          </div>
+
         </div>
         <Footer/>
     </div>
