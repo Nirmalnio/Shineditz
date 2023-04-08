@@ -13,7 +13,7 @@
     align-items: center;
     /* black 1 */
     color: #212123;
-    margin: 6px;
+    margin: 25px 0 0 0 ;
 }
 
 .small {
@@ -59,7 +59,7 @@
     border-radius: 15px;
     width: -webkit-fill-available;
     height: 50px;
-    border-color: transparent;
+    border: 1px solid #d6d6d6;
     margin: 10px 10px 20px 2px;
     padding: 5px 20px;
 
@@ -82,12 +82,10 @@
     border-radius: 15px;
 }
 
-.button1 {
-    margin:0 25%;
-    background: radial-gradient(293.15% 5244.37% at 100% 121.13%, #FF9A00 0%, #FD331F 100%)
-        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-    ;
-    width: 555px;
+.buttonsmt {
+    margin: auto;
+    background: radial-gradient(293.15% 5244.37% at 100% 121.13%, #FF9A00 0%, #FD331F 100%);
+    padding: 6px 40px ;
     height: 60px;
     border:none;
     border-radius: 30px;
@@ -96,7 +94,9 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 30px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* identical to box height, or 136% */
 
     color: #F3F3F3;
@@ -212,4 +212,23 @@ color: #4B5563;
         flex-direction: column;
         align-items: center;
     }  
+
+    .borderinput{
+        width: 100%;
+    }
+
+    .carddisplay{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactcard{
+        width: 100%;
+    }
+
+    .contacth2{
+        font-size: 32px;
+        line-height: 40px;
+    }
 }

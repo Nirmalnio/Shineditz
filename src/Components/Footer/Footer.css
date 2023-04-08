@@ -77,4 +77,10 @@ text-align: start;
   margin: 1vh 0;
 
 }
+
+.footerbtm{
+ display: flex;
+ flex-direction: column;
+ align-items: center    ;
+}
 }

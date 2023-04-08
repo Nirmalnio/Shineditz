@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-import Header from "../../Components/Head/Header";
+import Header from "../../Components/Head/Header"
 import './pricing.css';
 import bag from "../../Assets/Images/bag.jpg";
 import schoolbag from "../../Assets/Images/schoolbag.jpg";

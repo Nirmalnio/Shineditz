@@ -14,7 +14,7 @@ import serives3 from "../../Assets/Images/retouch image.jpg"
 import serives4 from "../../Assets/Images/shadow.jpg"
 import serives5 from "../../Assets/Images/color-correction.jpg"
 import global from "../../Assets/Images/globe.png"
-import { handicon,Quick,data,Assured,iso,price,clippingpath,masking,retouching,colorcorrection,showcorrection,Ghostmasking } from '../../Assets/icon';
+import { handicon,Quick,data,Assured,iso,prices,clippingpath,masking,retouching,colorcorrection,showcorrection,Ghostmasking } from '../../Assets/icon';
 import Footer from '../../Components/Footer/Footer';
 function Homepage() {
 
@@ -166,12 +166,12 @@ console.log(Option,"options");
           <div className='mb-2'>{handicon}</div>
           <span className='cardsechead'>Manually Hand-Drawn</span>
           <p className='cardsecdesp'>Our organization values manual work over automation in certain areas, 
-          recognizing its potential to provide a sense of fulfillment and produce high-quality outcomes that demand skills, experience, and attention to detail, which cannot be replicated by machines.</p>
+          recognizing its potential to provide a sense of fulfillment and produce high-quality outcomes that demand skills, experience.</p>
         </div>
         <div className='cardssection2'>
           <div className='mb-2'>{Quick}</div>
           <span className='cardsechead'>Quick Turnaround Time</span>
-          <p className='cardsecdesp'>We prioritize providing fast turnaround times to demonstrate our efficiency and commitment to customer satisfaction, gaining a competitive edge and improving loyalty.
+          <p className='cardsecdesp'>We prioritize providing fast turnaround times to demonstrate our efficiency and commitment to customer satisfaction.
            We balance speed with quality to meet high standards.</p>
         </div>
         <div className='cardssection3'>
@@ -193,7 +193,7 @@ console.log(Option,"options");
             However, it is important to ensure that privacy concerns are addressed, and that data is secured and used ethically.</p>
         </div>
         <div className='cardssection6'>
-          <div className='mb-2'>{price}</div>
+          <div className='mb-2'>{prices}</div>
           <span className='cardsechead'>Reasonable Price</span>
           <p className='cardsecdesp'>Our belief is that a reasonable price should be fair and justifiable for both the customer and the business, 
           reflecting the product or service value, while also being competitive in the market and allowing for a reasonable profit margin.</p>

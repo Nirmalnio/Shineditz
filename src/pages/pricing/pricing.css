@@ -40,7 +40,6 @@
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
-    flex-direction:row;
 }
 
 
@@ -48,15 +47,13 @@
     display: flex;
     align-items: center;
     text-align: center;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 100px;
 
 }
 
 .buttoncardsactive {
-    background: radial-gradient(293.15% 5244.37% at 100% 121.13%, rgba(255, 154, 0, 0.2) 0%, rgba(253, 51, 31, 0.2) 100%);
-    ;
+    background: radial-gradient(293.15% 5244.37% at 100% 121.13%, rgba(255, 154, 0, 0.2) 0%, rgba(253, 51, 31, 0.2) 100%);;
     box-shadow: 4px 4px 8px rgba(215, 215, 215, 0.25);
     border-radius: 15px;
     width: 200px;
@@ -65,13 +62,8 @@
     font-style: normal;
     font-weight: 900;
     font-size: 22px;
-    line-height: 35px;
-    /* identical to box height, or 318% */
-
+    line-height: 32px;
     text-align: center;
-
-    /* black 1 */
-
     color: #212123;
     border-color: #FF9A00;
 }
@@ -84,6 +76,11 @@
     background-color: white;
     width: 200px;
     height: 100px;
+    margin: 0px 10px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .card2 {
@@ -171,4 +168,64 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width:1320px) {
+    .buttoncards{
+        width: 150px;
+        height: 75px;
+        font-size: 15px;
+    }
+    .buttoncardsactive {
+        width: 150px;
+        height: 75px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .flexbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+}
+
+@media screen and (max-width:1120px) {
+  .cardsec{
+    overflow-x: auto;
+  }
+
+  /* width */
+  .cardsec::-webkit-scrollbar {
+    display: none;
+}
+  /* Track */
+  .cardsec::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  .cardsec::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  .submitbutton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button1{
+    margin: 14px 0 0 0;
+  }
+
+  .headdiv h1 {
+     font-size: 34px;
+     line-height: 40px;
+  }
+
+  .headdiv{
+    margin: 0px;
+  }
 }

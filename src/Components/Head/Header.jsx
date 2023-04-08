@@ -5,12 +5,14 @@ import { Link } from 'react-router-dom'
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import {menuicon} from "../../Assets/icon"
 import { GiHamburgerMenu} from "react-icons/gi";
-import { useState,useEffect } from "react"
+import { useState,useEffect,createRef } from "react"
+import { animateScroll as scroll } from 'react-scroll';
 function Header() {
 
 
   const [show, setShow] = useState(false);
-
+ 
+  const [links,setlinks] = useState()
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -18,7 +20,12 @@ function Header() {
   const arrow = <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
   <path d="M12 16.5l-6-6 1.5-1.5 4.5 4.5 4.5-4.5 1.5 1.5z" fill="currentColor"/>
 </svg>
-                                      
+             
+
+             const handleOptionClick = (id) => {
+               window.location.href = "/services" + '#' + id;
+             };
+
   
   return (
     <>
@@ -31,12 +38,24 @@ function Header() {
                 <li className='dropdown'>
                   <div className='dropbtn'>Services&nbsp;{arrow}</div>
                   <div className='dropdown-content'>
-                    <Link className="drpdwnlink" to="/services">Clipping path</Link>
-                    <Link className="drpdwnlink" to="/services">Color correction</Link>
-                    <Link className="drpdwnlink" to="/services">shadow correstion</Link>
-                    <Link className="drpdwnlink" to="/services">Ghost removal</Link>
-                    <Link className="drpdwnlink" to="/services">Image Masking</Link>
-
+                    <Link className="drpdwnlink" to="/services"  
+                    // onClick={()=>handleOptionClick("ClippingPath")}
+                    >Clipping path</Link>
+                    <Link className="drpdwnlink" to="/services"
+                    onClick={()=>handleOptionClick("Color_Correction_Services")}
+                    >Color correction</Link>
+                    <Link className="drpdwnlink" to="/services"
+                    onClick={()=>handleOptionClick("ShadowCreation")}
+                    >shadow correstion</Link>
+                    <Link className="drpdwnlink" to="/services"
+                    onClick={()=>handleOptionClick("GhostMannequin")}
+                    >Ghost removal</Link>
+                    <Link className="drpdwnlink" to="/services"
+                       onClick={()=>handleOptionClick("Imagemasking")}
+                       >Image Masking</Link>
+                      <Link className='drpdwnlink' to="/services"
+                      onClick={()=>handleOptionClick("PhotoRetouching")}
+                      >Photo Retouching</Link>
                   </div>
                 </li>
                 

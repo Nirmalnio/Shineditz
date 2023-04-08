@@ -2,6 +2,7 @@ import { React, useState } from 'react'
 import Header from '../../Components/Head/Header'
 import "./contact.css"
 import Footer from "../../Components/Footer/Footer"
+import { facebookicon,youtubeicon,instaIcon,linkedin } from '../../Assets/icon'
 function Contact() {
 
   const [name, setName] = useState("");
@@ -69,18 +70,18 @@ function Contact() {
                 />
 
                 <textarea
-                  className='textarea'
+                  className='contact-input'
                   placeholder='Type your message*'
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  style={{minHeight:"50px",maxHeight:"120px",padding:"10px 15px"}}
+                  style={{minHeight:"130px",maxHeight:"150px",padding:"10px 15px"}}
                 />
               </div>
 
             </div>
 
 
-            <button className='button1' type="submit">Send message</button>
+            <button className='buttonsmt  ' type="submit">Send message</button>
           </form>
         </div>
 
@@ -96,7 +97,17 @@ function Contact() {
               </small>
               <h3>Follow Us</h3>
 
-
+              <div className='d-flex align-items-center'>
+       <div className='ml-2'><a href="https://www.facebook.com/shineditzz">
+        {facebookicon}
+       </a></div>
+       <div className='mx-2'><a href="https://www.youtube.com/channel/UCR0rBe3RisbD_tXq-FMeTFA">
+        {youtubeicon}</a></div>
+       <div className='mx-2'><a href="https://www.instagram.com/shineditzz/">
+        {instaIcon}</a></div>
+       <div className='mx-2'><a href="https://www.linkedin.com/in/aszen-technologies/">
+        {linkedin}</a></div>
+     </div>
 
           </div>
           <div className='contactcard'>
