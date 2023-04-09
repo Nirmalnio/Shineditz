@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-import Header from "../../Components/Head/Header";
-import Footer from "../../Components/Footer/Footer";
+import Header from "../../Components/Head/Header"
 import './pricing.css';
 import bag from "../../Assets/Images/bag.jpg";
 import schoolbag from "../../Assets/Images/schoolbag.jpg";
 import earings from "../../Assets/Images/earrings.jpg";
 import {BiRupee} from "react-icons/bi";  
+import Footer from "../../Components/Footer/Footer";
 
 function Pricing() {
 
@@ -59,7 +59,7 @@ function Pricing() {
     return (
         <div>
             <Header />
-            <div className="containerdiv">
+            <div className="containerdiv my-3">
                 <div className="headdiv">
                     <h1>Find the plan that fits you</h1>
                     <p>We have plans to match your needs for turnaround time, retouching features, and price point</p>

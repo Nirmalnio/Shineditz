@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     /* background: linear-gradient(111.49deg, rgba(255, 255, 255, 0.4) -8.95%, rgba(255, 255, 255, 0.4) 114%); */
-    background:#ffffffed ;
+    background:#ffffff ;
     padding: 0  4vw;
     z-index: 1000;
     min-height: 80px;
@@ -34,6 +34,7 @@
    font-style: normal;
    font-weight: 500;
    font-size: 18px; 
+   cursor: pointer;
 }
 
 .contactus-btn{
@@ -91,7 +92,15 @@
 .mobmenu{
   display: none;
 }
+
+.mobdiv{
+  display: none;
+}
 @media screen and (max-width: 860px){
+  .headerlogo{
+    width: 200px;
+    height: auto;
+ }
     .contactus-btn{
       display: none;
     }
@@ -103,4 +112,34 @@
      display: block;
     }
 
+    .contactus-btn2{
+      background: radial-gradient(293.15% 5244.37% at 100% 121.13%, #FF9A00 0%, #FD331F 100%);
+      width: 140px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 25px;
+      color: #FFFFFF;
+      border-radius: 20px;
+      margin-top: 10vh;
+   }
+
+   .mob-options{
+    color: #212123;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px; 
+    margin: 12px 0px;
+    text-decoration: none;
+   }
+
+   .mobdiv{
+    display: block;
+   }
 }
