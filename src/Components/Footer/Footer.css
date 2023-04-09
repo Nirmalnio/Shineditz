@@ -1,80 +1,92 @@
-.footermaindiv{
+.footermaindiv {
     /* position: sticky;
     bottom: 0; */
     background: #fff;
     padding: 40px 60px;
 }
-.footerinside{
+
+.footerinside {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.footerlogotxt{
+.footerlogotxt {
+    padding-left: 15px;
     font-family: 'Nunito';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 28px;
-/* identical to box height, or 378% */
-
-
-/* secondary black */
-
-color: #4B5563;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    color: #4B5563;
 }
-.footerlogo{
+
+.footerlogo {
     width: 190px;
     height: auto;
 }
 
-.footeroptions{
+.footeroptions {
     display: flex;
     justify-content: space-between;
     width: 50vw;
 }
 
-.footeroptions div{
+.footeroptions div {
 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .footeroptions div span {
     font-family: 'Nunito';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 25px;
-color: #4B5563;
-margin:  2vh 0;
-text-align: start;
-} 
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #4B5563;
+    margin: 2vh 0;
+    text-align: start;
+}
 
-.footerbtm{
-    border-top:  0.8px solid rgba(75, 85, 99, 0.3);
+.footerbtm {
+    border-top: 0.8px solid rgba(75, 85, 99, 0.3);
     display: flex;
     justify-content: space-between;
     padding: 12px;
 }
 
-@media screen and (max-width: 680px){
- .footerinside{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- }
- .footeroptions{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- }
- .footeroptions div{
-   margin: 2vh 0px; 
-} 
-
-.footeroptions div span {
-  margin: 1vh 0;
-
+.AszenLogoFooter{
+    width: 120px;
+    height: auto;
 }
+@media screen and (max-width: 680px) {
+    .footerinside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footeroptions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+.footerbtm{
+ display: flex;
+ flex-direction: column;
+ align-items: center    ;
+}
+    .footeroptions div {
+        margin: 2vh 0px;
+    }
+
+    .footeroptions div span {
+        margin: 1vh 0;
+
+    }
 }
