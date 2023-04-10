@@ -1,8 +1,7 @@
 import { React, useState } from 'react'
 import Header from '../../Components/Head/Header'
 import Footer from '../../Components/Footer/Footer';
-import "./contact.css"
-import Footer from "../../Components/Footer/Footer"
+import "./contact.css";
 import { facebookicon,youtubeicon,instaIcon,linkedin } from '../../Assets/icon'
 function Contact() {
 
@@ -44,7 +43,7 @@ function Contact() {
 
                 <input
                   className='contact-input'
-                  type="phone"
+                  type="tel"
                   value={phone}
                   placeholder='Phone Number*'
                   onChange={(e) => setPhone(e.target.value)}
