@@ -7,13 +7,14 @@
 }
 
 .clippingpath{
-     display: flex;
+     /* display: flex;
      align-items: center;
-     justify-content: space-between;
+     justify-content: space-between; */
      margin-top: 90px;
+     margin-left:180px;
 }
 .clippingpath1{
-    width: 40%;
+    width: 85%;
 }
 
 .clippingpath h3 {
@@ -22,20 +23,24 @@
     font-weight: 900;
     font-size: 48px;
     line-height: 70px;
-    text-align: start;
+    text-align:center;
     color: #212123;
 }
 .clippingpath p {
-    font-family: 'Nunito';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 32px;
     color: #212123;
+    text-align: justify;
+    
   }
 .clippingpath2{
-    width: 40%;
-    text-align: end;
+    width: 90%;
+    display: flex;
+    justify-content:space-around;
+    
 }
 .shoeimg{
     height: auto;
@@ -44,20 +49,21 @@
 }
 
 .clippingpath2 p{
-    font-family: 'Nunito';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    text-align: end;
+    text-align:justify;
     color: #4B5563;
     margin-top: 10px;
+   ;
 }
 
 .viewsbtn{
     background: radial-gradient(293.15% 5244.37% at 100% 121.13%, #FF9A00 0%, #FD331F 100%);
     border-radius: 30px;
-    font-family: 'Nunito';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 0;
     font-size: 26px;
@@ -65,12 +71,13 @@
     text-align: center;
     color: #FFFFFF; 
     border: none;  
-    padding: 8px 20px;  
+    padding: 8px 20px;
+     margin-top: 50%;  
 }
 .samples{
     background: radial-gradient(293.15% 5244.37% at 100% 121.13%, #FF9A00 0%, #FD331F 100%);
     border-radius: 30px;
-    font-family: 'Nunito';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 0;
     font-size: 30px;
@@ -102,7 +109,7 @@
 }
 
 .clippingpath4 p{
-    font-family: 'Nunito';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -118,7 +125,7 @@
 }
 
 .clippingpath3 p{
-    font-family: 'Nunito';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -153,6 +160,7 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    margin-left: 0%;
   }
 
 .clippingpath h3 {
@@ -165,7 +173,16 @@
 
  .clippingpath2{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
  }
+ 
+ .viewsbtn{
+    margin-top: 5%;
+ }
+ 
 
  .picture{
     display: flex;

@@ -1,7 +1,7 @@
 import { React, useState } from 'react'
 import Header from '../../Components/Head/Header'
-import "./contact.css"
-import Footer from "../../Components/Footer/Footer"
+import Footer from '../../Components/Footer/Footer';
+import "./contact.css";
 import { facebookicon,youtubeicon,instaIcon,linkedin } from '../../Assets/icon'
 function Contact() {
 
@@ -22,11 +22,10 @@ function Contact() {
 
       <section className='contcontainer'>
         <h2 className='contacth2'>Send message?</h2>
-        <small className='small'>have a project in mind
+        <p className='pen'>have a project in mind
           we would love to  help you out
-        </small>
+        </p>
 
-        <h2 className='contacth2'>Your message here</h2>
         <div>
           <form onSubmit={sendmessage}>
             <div className='flexdisplay'>
@@ -43,7 +42,7 @@ function Contact() {
 
                 <input
                   className='contact-input'
-                  type="phone"
+                  type="tel"
                   value={phone}
                   placeholder='Phone Number*'
                   onChange={(e) => setPhone(e.target.value)}
@@ -121,6 +120,7 @@ function Contact() {
           </div>
 
         </div>
+        <Footer/>
 
 
 
@@ -130,9 +130,7 @@ function Contact() {
 
 
       </section >
-      <div className='mt-2'>
-        <Footer/>
-      </div>
+      
 
     </div >
   )

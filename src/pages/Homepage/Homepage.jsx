@@ -16,6 +16,8 @@ import serives5 from "../../Assets/Images/color-correction.jpg"
 import global from "../../Assets/Images/globe.png"
 import { handicon,Quick,data,Assured,iso,prices,clippingpath,masking,retouching,colorcorrection,showcorrection,Ghostmasking } from '../../Assets/icon';
 import Footer from '../../Components/Footer/Footer';
+import carouselimg from '../../Assets/Images/caursel.jpg'
+
 function Homepage() {
 
     const [price,setprice] = useState("Clipping Services")
@@ -117,7 +119,8 @@ console.log(Option,"options");
     <div>
       <Header />
       <div className='H-ptopdiv'>
-        <div className='carousalitems'>
+       
+        {/* <div className='carousalitems'>
           <Carousel fade>
             <Carousel.Item interval={2000}>
               <img
@@ -145,15 +148,19 @@ console.log(Option,"options");
               />
             </Carousel.Item>
           </Carousel>
-        </div>
+        </div> */} 
 
         <div className='homepage-topdiv'>
           <h1>Enhance Your Product Images with </h1>
           <h2>Expert Photoshop Services</h2>
         </div>
-        <div className='h-p-secndDiv'>
-          <p className='h-p-descrip'>From a simple white background to the most complex clipping paths. Get pixel perfect image editing services,  Get Flawless Edits in just 12-16 hours with Sheneditz.</p>
+        <div className='carouselimg'>
+        <img className='sliderimg' src={carouselimg} />
         </div>
+        
+        {/* <div className='h-p-secndDiv'>
+          <p className='h-p-descrip'>From a simple white background to the most complex clipping paths. Get pixel perfect image editing services,  Get Flawless Edits in just 12-16 hours with Sheneditz.</p>
+        </div> */}
       </div>
 
       <div className='h-p-thirdDiv'>
@@ -258,7 +265,7 @@ console.log(Option,"options");
         {/*<<======= princing ==========>> */}
 
         <div className='pricingplanDiv'>
-          <h5>Choose a plan that best suits you</h5>
+          <h5>Choose a plan that suits you</h5>
           <div className='pricing-div'>
            
               <div className='pricingItems'>
