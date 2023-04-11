@@ -1,4 +1,4 @@
-@import url('./Assets/Fonts/fonts.css');
+/* @import url('./Assets/Fonts/fonts.css'); */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 
 
@@ -14,7 +14,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, nunito 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, Open Sans 'Courier New',
     monospace;
 }
 

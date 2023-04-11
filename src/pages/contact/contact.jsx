@@ -22,11 +22,10 @@ function Contact() {
 
       <section className='contcontainer'>
         <h2 className='contacth2'>Send message?</h2>
-        <small className='small'>have a project in mind
+        <p className='pen'>have a project in mind
           we would love to  help you out
-        </small>
+        </p>
 
-        <h2 className='contacth2'>Your message here</h2>
         <div>
           <form onSubmit={sendmessage}>
             <div className='flexdisplay'>
@@ -131,9 +130,7 @@ function Contact() {
 
 
       </section >
-      <div className='mt-2'>
-        <Footer/>
-      </div>
+      
 
     </div >
   )

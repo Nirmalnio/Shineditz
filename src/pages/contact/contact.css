@@ -3,30 +3,33 @@
 }
 
 .contacth2 {
-    font-family: 'Nunito';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 800;
-    font-size: 48px;
+    font-size: 42px;
+    text-align: center;
     line-height: 40px;
     /* identical to box height, or 83% */
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     /* black 1 */
     color: #212123;
     margin: 25px 0 0 0 ;
 }
 
-.small {
-    font-family: 'Nunito';
+.pen {
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
     /* or 156% */
-    display: flex;
+    /* display: flex;   
     align-items: center;
     /* secondary black */
+    text-align: center;
     color: #4B5563;
+    padding: 15px;
 }
 
 .frminput {
@@ -57,7 +60,7 @@
     background: #FCFCFC;
     box-shadow: 0px 2px 6px rgba(205, 205, 205, 0.3);
     border-radius: 15px;
-    width: 100%;
+    width: 80%;
     height: 50px;
     border: 1px solid #d6d6d6;
     margin: 10px 10px 20px 2px;
@@ -89,7 +92,7 @@
     height: 60px;
     border:none;
     border-radius: 30px;
-    font-family: 'Nunito';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -125,7 +128,7 @@ border-radius: 30px;
 
 .cardh6{
     
-font-family: 'Nunito';
+font-family: 'Open Sans';
 font-style: normal;
 font-weight: 800;
 font-size: 26px;
@@ -147,7 +150,7 @@ background-clip: text;
 border:none;
 text-decoration-line: underline;}
 .mail{
-    font-family: 'Nunito';
+    font-family: 'Open Sans';
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
@@ -162,7 +165,7 @@ align-items: center;
 color: #212123;
 }
 .contactcard h3{
-    font-family: 'Nunito';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 800;
     font-size: 26px;
@@ -178,10 +181,10 @@ color: #212123;
     
 }
 .contactcard small{
-    font-family: 'Nunito';
+    font-family: 'Open Sans';
 font-style: normal;
-font-weight: 400;
-font-size: 16px;
+font-weight: 200;
+font-size: 14px;
 line-height: 30px;
 /* or 188% */
 
@@ -195,7 +198,7 @@ color: #4B5563;
 }
 
 .contactcard h6{
-    font-family: 'Nunito';
+font-family:'Open Sans';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;

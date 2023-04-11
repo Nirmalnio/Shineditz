@@ -11,9 +11,12 @@
     align-items: flex-start;
 }
 
+.ben{
+    font-size:24px; ;
+}
 .footerlogotxt {
     padding-left: 11px;
-    font-family: 'Nunito';
+    font-family:'Open Sans';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -22,14 +25,14 @@
 }
 
 .footerlogo {
-    width: 190px;
+    width: 250px;
     height: auto;
 }
 
 .footeroptions {
     display: flex;
     justify-content: space-between;
-    width: 50vw;
+    width: 30vw;
 }
 
 .footeroptions div {
@@ -40,13 +43,13 @@
 }
 
 .footeroptions div span {
-    font-family: 'Nunito';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
     color: #4B5563;
-    margin: 2vh 0;
+    margin: 1px 0;
     text-align: center;
 }
 
@@ -56,10 +59,17 @@
     justify-content: space-between;
     padding: 12px;
 }
+.logofoot{
+    margin-top: 60px;
+
+}
 
 .AszenLogoFooter{
-    width: 120px;
+    width: 100px;
     height: auto;
+}
+.sub{
+    vertical-align: bottom;
 }
 @media screen and (max-width: 680px) {
     .footerinside {
@@ -73,6 +83,9 @@
         flex-direction: column;
         align-items: center;
     }
+
+
+   
 
 
 

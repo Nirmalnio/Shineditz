@@ -25,12 +25,13 @@
    text-decoration: none;
    list-style: none;
    margin-bottom: 0px;
+   margin-right: 20px;
 }
 
 .headermenu ul li{
    margin-left: 22px;
    color: #212123;
-   font-family: 'Nunito';
+   font-family: 'Open Sans';
    font-style: normal;
    font-weight: 500;
    font-size: 18px; 
@@ -44,7 +45,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   font-family: 'Nunito';
+   font-family: 'Open Sans';
    font-style: normal;
    font-weight: 700;
    font-size: 18px;
@@ -96,7 +97,7 @@
 .mobdiv{
   display: none;
 }
-@media screen and (max-width: 860px){
+@media screen and (max-width: 920px){
   .headerlogo{
     width: 200px;
     height: auto;
@@ -119,7 +120,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: 'Nunito';
+      font-family: 'Open Sans';
       font-style: normal;
       font-weight: 700;
       font-size: 18px;
@@ -131,7 +132,7 @@
 
    .mob-options{
     color: #212123;
-    font-family: 'Nunito';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 500;
     font-size: 18px; 
