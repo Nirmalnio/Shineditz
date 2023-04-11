@@ -13,6 +13,11 @@ import shadowcreationbefore from "../../Assets/Images/After before/shadow creati
 import shadowcreationafter from "../../Assets/Images/After before/shadow creation/after.jpg"
 import GhostMannequinbefore from "../../Assets/Images/After before/Gost man/before.jpg"
 import GhostMannequinafter from "../../Assets/Images/After before/Gost man/after.jpg"
+import imagemaskingbefore from "../../Assets/Images/After before/Image Masking/before.jpg"
+import imagemaskingafter from "../../Assets/Images/After before/Image Masking/after.jpg"
+import PhotoRetouchingbefore from "../../Assets/Images/After before/Photoretouching/before.jpg"
+import PhotoRetouchingafter from "../../Assets/Images/After before/Photoretouching/after.jpg"
+
 function Services() {
 
     const myDivRef = createRef();
@@ -48,12 +53,12 @@ function Services() {
                             itemOne={<ReactCompareSliderImage src={clipingpathimg} alt="Image one" />}
                             itemTwo={<ReactCompareSliderImage src={clipingpath1img}
                                 alt="Image two" />}
-                            position={30}
+                            position={50}
                             style={{ width: "100%" }}
                         />
                         </div>
 
-                        <div> <button className='viewsbtn'>view samples</button></div>
+                        <div> <button className='viewsbtn'>View more Samples</button></div>
 
                         {/* <p>Starting at <b>$ 0.30</b> per image</p> */}
                     </div>
@@ -72,15 +77,15 @@ function Services() {
                     </div>
                     <div className='clippingpath2'>
                         <div><ReactCompareSlider
-                            itemOne={<ReactCompareSliderImage src="https://uceafaa96ecb7e62baa10d3c0530.previews.dropboxusercontent.com/p/thumb/AB2Oj7ojQDB9QIh__h7l_h6v6AhmF15zvXidTm9aobWpuSYmltc1qK72TglNss5MQrze5dxl05JnqmReJRIDgEKMOEbm1ZvtcJk0Ijb_BTOoI_oqS5P_1zWle4Bx7m8-l8B9un_Rn5pU4iXryBpbfpEVMi_eI4SK0wzErD2B6Kv0rljB0KeoI50hAM778Sug2HuHlLOiQl6aPFRRhdOqoDtOM99iwsGYqNOuOmeS-_zqGaF4c1s1ITct_4xZVArLAWndrHbu0NXEGmWjWCceMlXoXER6MqbBtiLIDtMC3jNiKt2ulaeFZwA7awllxjLCeCOOGYvY1lH00pLbacLnU5k88R7iirCtjarJK4Ihs6RCXE90GLidY35zX0n_wygbGzcv2skwDpk_RhsnFAK2MKl4vj6gGGNT2IlPKf86i2In_HukdID3lhO9eur8OBZGULN2Sb-7hxdIcKrk67mpuV9xbfocj4UGw6pf8ITXvbJhkcT_K21sw_kWFIkaDLe048M/p.jpeg"
+                            itemOne={<ReactCompareSliderImage src={PhotoRetouchingbefore}
                                 alt="Image one" />}
-                            itemTwo={<ReactCompareSliderImage src="https://uced554194476ecfe55f7a89c4f3.previews.dropboxusercontent.com/p/thumb/AB3V3dXb8PJSNNkKOZIESyfEUTOqbp9qKhUejESFBpRVs13C5zTbh4D4MWYvO27Uu9ngSFu4milZGBXujaOrK89lvhVDRgBcxZkPErsZehLK1C1Ngi8LHVtt9yL1FkkQl4lJlpSo6ypsQHP8_AcsBoHJf8s5Wdhmve_2ACOZhHbPE4opUmDUy1xUQLa9fOAVj8igg7NWrH5gzY3dSDrBDQiDczkzwJCrK3ade_TozPf--O0IRk2GgHPNicrUSUKacSEOVCTi7nslhwcKt93kXOPrPp93fziF_EkeJOD-eGtRpSSbJiE3yZ6GceTYoFvIpBLDEirKUTwgaEK3FAZ4QO_Ay0g-kwTJn2vw3H_-ZrvBVo61KZB6-IheP5DoaMbPXJYY73s7zDA25vtiqJtIob2vS8q-WMboAdKXJcsKjMxZUAtE0NRbFV47QeNZvako1YJ6RIJ3Ai4TTweM_zv0DDV-lFr6s9S8Dd5kDQFIfP3uI04kPGgR2SF4J8Y8Cde0TLw/p.jpeg"
+                            itemTwo={<ReactCompareSliderImage src={PhotoRetouchingafter}
                                 alt="Image two" />}
-                            position={80}
+                            position={50}
                             style={{ width: "100%" }}
                         /></div>
                         <div>
-                            <button className='viewsbtn'>view Samples</button>
+                            <button className='viewsbtn'>View more Samples</button>
                         </div>
                     </div>
                 </div>
@@ -108,7 +113,7 @@ function Services() {
 
                         </div>
                         <div>
-                            <button className='viewsbtn'>view samples</button>
+                            <button className='viewsbtn'>View more Samples</button>
                         </div>
                     </div>
                 </div>
@@ -136,7 +141,7 @@ function Services() {
                         />
                         </div>
                         <div>
-                            <button className='viewsbtn'>view Samples</button>
+                            <button className='viewsbtn'>View more Samples</button>
                         </div>
                     </div>
                 </div>
@@ -159,11 +164,10 @@ function Services() {
                                 alt="Image two" />}
                             position={50}
                             style={{ width: "100%" }}
-                        />
-                        
+                        />                        
                            </div>
                         <div>
-                            <button className='viewsbtn'>view samples</button>
+                            <button className='viewsbtn'>View more Samples</button>
                         </div>
                     </div>
                 </div>
@@ -183,12 +187,16 @@ function Services() {
 
                         </div>
                         <div className='clippingpath2'>
-                            <div>
-                                <img
-                                    className='shoeimg1'
-                                    src="https://uca4f5206966c20c7136b88dcd75.previews.dropboxusercontent.com/p/thumb/AB3RFO8uIwoONScWQcF2Q4c8FAVkdBO4bQ8DInVfXzuo-0jfmvqOyh6COMl_GMeHh0y43Ip_dBbyZ-paMu1qlIhnyx4rmvQaQxf85vC7nmz0eQIdsBgMQuV2ElW0CGOVEi4Bh-IWx_2UOK98C2zjYJAJ6ipyX3VvVNvGpkXVZ6nZ8yISR1varN20IVethCtVUUc3Yh6gsjA1w8-l3Lj-Uf_UazlmgDtGPQkZjNT7FxJyXfQLlwnV8ZCOUA7KOwGP5Lss0dUpaXoh9YZRQWH4iui-9-BYe94SHfj2r05xk13oLiyfcVO4RhV7Ugo8P8LaLc9W9HokfxG9H0WOisaJJAHceQrQJy_OZ0Lz_1odiBQRi0wF1rKSLrfV9DxLLxMP1Ts/p.jpeg" />
-                            </div>
-                            <div> <button className='viewsbtn'>view Samples</button>
+                        <div> <ReactCompareSlider
+                            itemOne={<ReactCompareSliderImage src={imagemaskingbefore}
+                                alt="Image one" />}
+                            itemTwo={<ReactCompareSliderImage src={imagemaskingafter}
+                                alt="Image two" />}
+                            position={50}
+                            style={{ width: "100%" }}
+                        />                        
+                           </div>
+                            <div> <button className='viewsbtn'>View more Samples</button>
                             </div>
                         </div>
                     </div>
