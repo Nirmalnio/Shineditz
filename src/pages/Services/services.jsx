@@ -1,157 +1,201 @@
-import { React, useState,useEffect,useRef,createRef } from 'react'
+import { React, useState, useEffect, useRef, createRef } from 'react'
 import "./services.css"
 import Header from '../../Components/Head/Header'
 import shoe1 from "../../Assets/Images/Banner 2.jpg"
 import Footer from '../../Components/Footer/Footer'
 import { linkshare } from '../../Assets/icon'
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
-
-function Services(){
+import clipingpathimg from "../../Assets/Images/After before/Clipping path/before.jpg"
+import clipingpath1img from "../../Assets/Images/After before/Clipping path/after.jpg"
+import colorcorrectionbefore from "../../Assets/Images/After before/Color Correction Services/before.jpg"
+import colorcorrectionafter from "../../Assets/Images/After before/Color Correction Services/after.jpg"
+import shadowcreationbefore from "../../Assets/Images/After before/shadow creation/before.jpg"
+import shadowcreationafter from "../../Assets/Images/After before/shadow creation/after.jpg"
+import GhostMannequinbefore from "../../Assets/Images/After before/Gost man/before.jpg"
+import GhostMannequinafter from "../../Assets/Images/After before/Gost man/after.jpg"
+function Services() {
 
     const myDivRef = createRef();
 
     useEffect(() => {
         if (window.location.hash) {
-          const targetId = window.location.hash.slice(1);
-          const targetDiv = myDivRef.current.querySelector(`#${targetId}`);
-          console.log(targetDiv,"TARGETID");
+            const targetId = window.location.hash.slice(1);
+            const targetDiv = myDivRef.current.querySelector(`#${targetId}`);
+            console.log(targetDiv, "TARGETID");
 
-          if (targetDiv) {
-            targetDiv.scrollIntoView();
-            const element = document.getElementById(`${targetId}`);
-            const y = element.getBoundingClientRect().top + window.pageYOffset;
-            window.scrollTo({top:y,behavior:"smooth"})
-          }
+            if (targetDiv) {
+                targetDiv.scrollIntoView();
+                const element = document.getElementById(`${targetId}`);
+                const y = element.getBoundingClientRect().top + window.pageYOffset;
+                window.scrollTo({ top: y, behavior: "smooth" })
+            }
         }
-      }, []);
+    }, []);
 
-    return(
+    return (
         <div >
-         <Header />
-         <div className='full' ref={myDivRef}>
-            <div className='clippingpath' id='ClippingPath' >
-                <div className='clippingpath1'>
-                    <h3 >Clipping path</h3>
-                    <p>Outsource your clipping path needs for your product photos to achieve sharp and immaculate 
-                      results on any background, freeing yourself from the burden of meticulous photo editing.</p><br />
-                      <button className='viewsbtn'>view samples</button>
+            <Header />
+            <div className='full' ref={myDivRef}>
+                <div className='clippingpath' id='ClippingPath' >
+                    <div className='clippingpath1'>
+                        <h3 >Our Clipping path Services</h3>
+                        <p>Clipping path photo editing service is a technique used in photo editing to isolate the subject of an image from the background. It involves creating a path around the subject using a pen tool in software such as Adobe Photoshop, which can then be used to separate the subject from the background and manipulate the image as required.
+                            At our photo editing service, we specialize in providing high-quality clipping path services to businesses and individuals. We offer a wide range of clipping path services, including simple clipping paths, compound clipping paths, and complex clipping paths. We can handle images of any size and complexity, and we can deliver the final images in a variety of formats to suit your needs.we are here to help. Our fast turnaround times, competitive pricing, and exceptional quality make us the ideal partner for all your photo editing needs.
+                        </p><br />
+                    </div>
+                    <div className='clippingpath2'>
+                        <div> <ReactCompareSlider
+                            itemOne={<ReactCompareSliderImage src={clipingpathimg} alt="Image one" />}
+                            itemTwo={<ReactCompareSliderImage src={clipingpath1img}
+                                alt="Image two" />}
+                            position={30}
+                            style={{ width: "100%" }}
+                        />
+                        </div>
+
+                        <div> <button className='viewsbtn'>view samples</button></div>
+
+                        {/* <p>Starting at <b>$ 0.30</b> per image</p> */}
+                    </div>
                 </div>
-                <div className='clippingpath2'>
-                <ReactCompareSlider
-                        itemOne={<ReactCompareSliderImage src="https://uceafaa96ecb7e62baa10d3c0530.previews.dropboxusercontent.com/p/thumb/AB2Oj7ojQDB9QIh__h7l_h6v6AhmF15zvXidTm9aobWpuSYmltc1qK72TglNss5MQrze5dxl05JnqmReJRIDgEKMOEbm1ZvtcJk0Ijb_BTOoI_oqS5P_1zWle4Bx7m8-l8B9un_Rn5pU4iXryBpbfpEVMi_eI4SK0wzErD2B6Kv0rljB0KeoI50hAM778Sug2HuHlLOiQl6aPFRRhdOqoDtOM99iwsGYqNOuOmeS-_zqGaF4c1s1ITct_4xZVArLAWndrHbu0NXEGmWjWCceMlXoXER6MqbBtiLIDtMC3jNiKt2ulaeFZwA7awllxjLCeCOOGYvY1lH00pLbacLnU5k88R7iirCtjarJK4Ihs6RCXE90GLidY35zX0n_wygbGzcv2skwDpk_RhsnFAK2MKl4vj6gGGNT2IlPKf86i2In_HukdID3lhO9eur8OBZGULN2Sb-7hxdIcKrk67mpuV9xbfocj4UGw6pf8ITXvbJhkcT_K21sw_kWFIkaDLe048M/p.jpeg" 
-                         alt="Image one" />}
-                        itemTwo={<ReactCompareSliderImage src="https://uced554194476ecfe55f7a89c4f3.previews.dropboxusercontent.com/p/thumb/AB3V3dXb8PJSNNkKOZIESyfEUTOqbp9qKhUejESFBpRVs13C5zTbh4D4MWYvO27Uu9ngSFu4milZGBXujaOrK89lvhVDRgBcxZkPErsZehLK1C1Ngi8LHVtt9yL1FkkQl4lJlpSo6ypsQHP8_AcsBoHJf8s5Wdhmve_2ACOZhHbPE4opUmDUy1xUQLa9fOAVj8igg7NWrH5gzY3dSDrBDQiDczkzwJCrK3ade_TozPf--O0IRk2GgHPNicrUSUKacSEOVCTi7nslhwcKt93kXOPrPp93fziF_EkeJOD-eGtRpSSbJiE3yZ6GceTYoFvIpBLDEirKUTwgaEK3FAZ4QO_Ay0g-kwTJn2vw3H_-ZrvBVo61KZB6-IheP5DoaMbPXJYY73s7zDA25vtiqJtIob2vS8q-WMboAdKXJcsKjMxZUAtE0NRbFV47QeNZvako1YJ6RIJ3Ai4TTweM_zv0DDV-lFr6s9S8Dd5kDQFIfP3uI04kPGgR2SF4J8Y8Cde0TLw/p.jpeg" 
-                         alt="Image two" />}
-                         position={30}
-                         style={{width:"100%"}}
-                    />
-                    <p>Starting at <b>$ 0.30</b> per image</p>
-                </div>
-            </div>
 
 
-         
-        <div className='picture' id='PhotoRetouching ' >
-         <div className='clippingpath3'>
-                    <ReactCompareSlider
-                        itemOne={<ReactCompareSliderImage src="https://uceafaa96ecb7e62baa10d3c0530.previews.dropboxusercontent.com/p/thumb/AB2Oj7ojQDB9QIh__h7l_h6v6AhmF15zvXidTm9aobWpuSYmltc1qK72TglNss5MQrze5dxl05JnqmReJRIDgEKMOEbm1ZvtcJk0Ijb_BTOoI_oqS5P_1zWle4Bx7m8-l8B9un_Rn5pU4iXryBpbfpEVMi_eI4SK0wzErD2B6Kv0rljB0KeoI50hAM778Sug2HuHlLOiQl6aPFRRhdOqoDtOM99iwsGYqNOuOmeS-_zqGaF4c1s1ITct_4xZVArLAWndrHbu0NXEGmWjWCceMlXoXER6MqbBtiLIDtMC3jNiKt2ulaeFZwA7awllxjLCeCOOGYvY1lH00pLbacLnU5k88R7iirCtjarJK4Ihs6RCXE90GLidY35zX0n_wygbGzcv2skwDpk_RhsnFAK2MKl4vj6gGGNT2IlPKf86i2In_HukdID3lhO9eur8OBZGULN2Sb-7hxdIcKrk67mpuV9xbfocj4UGw6pf8ITXvbJhkcT_K21sw_kWFIkaDLe048M/p.jpeg" 
-                         alt="Image one" />}
-                        itemTwo={<ReactCompareSliderImage src="https://uced554194476ecfe55f7a89c4f3.previews.dropboxusercontent.com/p/thumb/AB3V3dXb8PJSNNkKOZIESyfEUTOqbp9qKhUejESFBpRVs13C5zTbh4D4MWYvO27Uu9ngSFu4milZGBXujaOrK89lvhVDRgBcxZkPErsZehLK1C1Ngi8LHVtt9yL1FkkQl4lJlpSo6ypsQHP8_AcsBoHJf8s5Wdhmve_2ACOZhHbPE4opUmDUy1xUQLa9fOAVj8igg7NWrH5gzY3dSDrBDQiDczkzwJCrK3ade_TozPf--O0IRk2GgHPNicrUSUKacSEOVCTi7nslhwcKt93kXOPrPp93fziF_EkeJOD-eGtRpSSbJiE3yZ6GceTYoFvIpBLDEirKUTwgaEK3FAZ4QO_Ay0g-kwTJn2vw3H_-ZrvBVo61KZB6-IheP5DoaMbPXJYY73s7zDA25vtiqJtIob2vS8q-WMboAdKXJcsKjMxZUAtE0NRbFV47QeNZvako1YJ6RIJ3Ai4TTweM_zv0DDV-lFr6s9S8Dd5kDQFIfP3uI04kPGgR2SF4J8Y8Cde0TLw/p.jpeg" 
-                         alt="Image two" />}
-                         position={80}
-                         style={{width:"100%"}}
-                    />
 
-                    <p>Starting at<b> $ 0.60</b> per image</p>
+                <div className='clippingpath' id='PhotoRetouching ' >
+                    <div className='clippingpath1'>
+                        <h3>Photo retouching Services</h3>
+                        <p>Welcome to our professional photo retouching service! Our team of experienced photo editors is dedicated to enhancing your images and making them look their best.
+                            We offer a wide range of photo retouching services, including color correction, skin smoothing, blemish removal, background removal, object removal, and more. We work with all types of images, including portrait, landscape, product, and event photos.
+                            Our photo retouching process is simple and hassle-free. You can upload your images to our secure platform, specify your retouching needs, and our team will take care of the rest. We use the latest editing software and techniques to ensure that your images look natural and professional.
+                            Our photo retouching service is perfect for photographers, businesses, individuals, and anyone who wants to improve the quality of their images. Whether you need a few quick edits or extensive retouching, we've got you covered.
+                        </p>
+                    </div>
+                    <div className='clippingpath2'>
+                        <div><ReactCompareSlider
+                            itemOne={<ReactCompareSliderImage src="https://uceafaa96ecb7e62baa10d3c0530.previews.dropboxusercontent.com/p/thumb/AB2Oj7ojQDB9QIh__h7l_h6v6AhmF15zvXidTm9aobWpuSYmltc1qK72TglNss5MQrze5dxl05JnqmReJRIDgEKMOEbm1ZvtcJk0Ijb_BTOoI_oqS5P_1zWle4Bx7m8-l8B9un_Rn5pU4iXryBpbfpEVMi_eI4SK0wzErD2B6Kv0rljB0KeoI50hAM778Sug2HuHlLOiQl6aPFRRhdOqoDtOM99iwsGYqNOuOmeS-_zqGaF4c1s1ITct_4xZVArLAWndrHbu0NXEGmWjWCceMlXoXER6MqbBtiLIDtMC3jNiKt2ulaeFZwA7awllxjLCeCOOGYvY1lH00pLbacLnU5k88R7iirCtjarJK4Ihs6RCXE90GLidY35zX0n_wygbGzcv2skwDpk_RhsnFAK2MKl4vj6gGGNT2IlPKf86i2In_HukdID3lhO9eur8OBZGULN2Sb-7hxdIcKrk67mpuV9xbfocj4UGw6pf8ITXvbJhkcT_K21sw_kWFIkaDLe048M/p.jpeg"
+                                alt="Image one" />}
+                            itemTwo={<ReactCompareSliderImage src="https://uced554194476ecfe55f7a89c4f3.previews.dropboxusercontent.com/p/thumb/AB3V3dXb8PJSNNkKOZIESyfEUTOqbp9qKhUejESFBpRVs13C5zTbh4D4MWYvO27Uu9ngSFu4milZGBXujaOrK89lvhVDRgBcxZkPErsZehLK1C1Ngi8LHVtt9yL1FkkQl4lJlpSo6ypsQHP8_AcsBoHJf8s5Wdhmve_2ACOZhHbPE4opUmDUy1xUQLa9fOAVj8igg7NWrH5gzY3dSDrBDQiDczkzwJCrK3ade_TozPf--O0IRk2GgHPNicrUSUKacSEOVCTi7nslhwcKt93kXOPrPp93fziF_EkeJOD-eGtRpSSbJiE3yZ6GceTYoFvIpBLDEirKUTwgaEK3FAZ4QO_Ay0g-kwTJn2vw3H_-ZrvBVo61KZB6-IheP5DoaMbPXJYY73s7zDA25vtiqJtIob2vS8q-WMboAdKXJcsKjMxZUAtE0NRbFV47QeNZvako1YJ6RIJ3Ai4TTweM_zv0DDV-lFr6s9S8Dd5kDQFIfP3uI04kPGgR2SF4J8Y8Cde0TLw/p.jpeg"
+                                alt="Image two" />}
+                            position={80}
+                            style={{ width: "100%" }}
+                        /></div>
+                        <div>
+                            <button className='viewsbtn'>view Samples</button>
+                        </div>
+                    </div>
                 </div>
-                <div className='clippingpath4'>
-                    <h3>Photo retouching Services</h3>
-                    <p>involve the process of editing, enhancing, and manipulating digital photographs using various software 
-                        tools to make them look more polished, professional, and visually appealing.</p><br />
-                      <button className='viewsbtn'>view Samples</button>
-                      
-                </div>
-            </div>
-
-        
-            <div className='clippingpath' id='Color_Correction_Services' >
-                <div className='clippingpath1'>
-                    <h3 >Color Correction Services</h3>
-                    <p>a type of photo editing service that involves adjusting the colors in a digital image to achieve a more accurate and visually pleasing result. This service is used to correct issues related to color temperature, saturation, hue, contrast, and brightness.</p><br />
-                      <button className='viewsbtn'>view samples</button>
-                </div>
-                <div className='clippingpath2'>
-                    
-                    <ReactCompareSlider
-                        itemOne={<ReactCompareSliderImage src="https://uc913d2ef1667048a0ed7ba85cd6.previews.dropboxusercontent.com/p/thumb/AB3PdSia_NHEsc5QfIReH9ipDLrtTx5OZb2MGCDpS4fsZSxSPtZd17XBqY8fAMtsIUoXkfVACDTbJZwPS2B2g_r5j9-Hw7XAuA_JQaqRGhOYnKyRJ0shZa5uiRPJzTwGY2q7A01PPjIhh3GYWXrYAnNVY3FheUHBWO3L2naPLzYj9f6ncUNnPVe6rUIhbXet-zPuUCq-3RLdknTxkC8xZLkpmU0WFvtcC-BZengPWgdGUbPEBuzejXNFosu5V7QfEvbtmrS03NNINLQe_o0Uv_EsYTQTYyPcbpDP9_plt5-0Nf1wZwTWVNTIYNo0wZlNTLNFz7slBmNkfgzeaYuOT41_1eZOc83wK0yliaOhLXjZPSpxpP8wvpLmhxm67CeFCd7XlnLg5wm868YMuaUdFBNzp6N8UJTPjI1pQJX6o7hK1oJrUIJW5ysZIic2Pd6RBrByoLYOF2_g4XbGRFVnsAdCgKwJP8P_C0dYxzBxEWC8HYXXqL7NCJz2lHjAFld-2bWQ8ui2BtvKwsJ0vIQ_x9XIufR7967ZVp9BFORzrMOF1NgNJWi9IBvMRDLZ2u6_jhs/p.jpeg" 
-                         alt="Image one" />}
-                        itemTwo={<ReactCompareSliderImage src="https://uc37a1a2325dbb5d64826d810eb6.previews.dropboxusercontent.com/p/thumb/AB2JlDPN1nOzRz65O1ulBrnoJEPQTInJhIi7ZYNp53xtXI-lrjQ0EIePBXYMHBTQjgb0s4uakHh_PVOpiuQn_PpNrBfx7M53Shnq4ELOOIs0UDqt7PgyVOUcNM1uY7TWYNgN3ig1KNOA6hsDEwAwhinAk6wc2dIsco3GJDxGrHw5YZx78kRva-lg9aoThGAsrXh2n4bkI3uvu2sAoK_lcoz-klFkunGKqCAo-ELSyDEPzrrP6I3aXiYSGq9dc2scXAXEdcsINJXMIbfVGB_hq633T3rd20VRy5RktFrSFST0feHX5dHq2BEViXIZuIkQvz4hhDimNBNnDReJa1Dm-fkMkuene2ZjLhj_PM7Et4hVKxbHcI0Cu2AamZQcPPHb1EqGd7wlpEtNj95sK7QPR7P91gfeEJ1h4xredGtwFAyldnDwrjOz_QNFZeWF7ukujNL3jqOxO_l6LGZoFIlQlx2L5XiX2Hu3W8MPIMzB7j9eYozO2oz7CgXO5W4DPUGPnoE/p.jpeg" 
-                         alt="Image two" />}
-                         position={20}
-                         style={{width:"100%"}}
-                    />
-                    <p>Starting at <b>$ 0.25</b> per image</p>
-                </div>
-            </div>
 
 
-         
-        <div className='picture' id='ShadowCreation'>
-         <div className='clippingpath3'>
-         <img 
-                    className='shoeimg1'
-                    src="https://uc2014fd32804a0d4154d05f3d33.previews.dropboxusercontent.com/p/thumb/AB2NmfPqdBrbXaTbir6HeV7uJzlgBVJ9IFDGBpbY-El96ees45M3hLKKm1xvLdSL7_nTR8e9e-ooeI0m8L68yXX1CL_aQlGg9LgWKcbLwDdD0w3kwgkTJGWyoYBaeKunDDi7Ph_sDES9pVfdKfikLj2o0acimoEFWZNXS9sTma2Lnf8d5Rfzv1KD8H1RzmhMJhUiu5bghuQ40B9CPqqHgg88QEzOQvY9ESh2lZ2V3NJtB49suwvIl3HaWUiUAyAd3Kq2_Mb2X4RMDR4bvbp0nad-GhsV7ZFZTiP5UATiWqAat9ijegjMqnenqeCityC6Pc9f55oq3ZGUoSvfB7sUVlyA3zIlDHPnJ7Dtq4y8htYgiqGgt9K17UJx3fYb6DADIT0/p.jpeg?size=512x512&size_mode=1"/>
-                    <p>Starting at<b> $ 0.20</b> per image</p>
-                </div>
-                <div className='clippingpath4'>
-                    <h3>Shadow Creation</h3>
-                    <p> a photo editing service that involves adding a shadow effect to a product or object in a digital image to create a sense of depth, dimension, and realism. This service is commonly used in e-commerce, product photography,
-                         and advertising to make products look more attractive and professional.</p><br />
-                      <button className='viewsbtn'>view Samples</button>
-                      
-                </div>
-            </div>
+                <div className='clippingpath' id='Color_Correction_Services' >
+                    <div className='clippingpath1'>
+                        <h3 >Color Correction Services</h3>
+                        <p>Our color correction services can help you achieve the perfect balance of colors in your images.Whether you need to correct color issues caused by lighting or white balance problems, our team of color correction experts can help. We can also enhance the colors of your images to make them pop and stand out.
+                            Our color correction services are available for a variety of industries, including e-commerce, photography, and graphic design. We work with a variety of file formats and can deliver your retouched images in the format of your choice.
+                            Don't let color issues ruin your photos - let our professional color correction services help you achieve the perfect look. Contact us today to learn more about how we can help you take your images to the next level.
+                        </p><br />
 
-            <div className='clippingpath' id='GhostMannequin' >
-                <div className='clippingpath1'>
-                    <h3>Ghost Mannequin services </h3>
-                    <p>a type of photo editing service that is commonly used in e-commerce product photography. It involves editing an image of a product on a mannequin or model to remove the mannequin or model, leaving only the product visible. This technique creates the illusion that the product is floating in mid-air,
-                         giving the viewer a clearer and more detailed view of the product.</p><br />
-                      <button className='viewsbtn'>view samples</button>
+                    </div>
+                    <div className='clippingpath2'>
+                        <div>
+                            <ReactCompareSlider
+                                itemOne={<ReactCompareSliderImage src={colorcorrectionbefore}
+                                    alt="Image one" />}
+                                itemTwo={<ReactCompareSliderImage src={colorcorrectionafter}
+                                    alt="Image two" />}
+                                position={50}
+                                style={{ width: "100%" }}
+                            />
+
+                        </div>
+                        <div>
+                            <button className='viewsbtn'>view samples</button>
+                        </div>
+                    </div>
                 </div>
-                <div className='clippingpath2'>
-                    <img 
-                    className='shoeimg'
-                    alt='image'
-                    src={'https://uc913d2ef1667048a0ed7ba85cd6.previews.dropboxusercontent.com/p/thumb/AB3tVAEUNhO5gW5Z4GYun2d4s4qDH06R2EIlpRPhkkBaB_hw0t2KaC96YsniDYYSwG6cbZ9XEuc_X5Xqdt3KVFg_4D5VpZ6rhN8hzLWE_0gEw_wHYrBDVV5lb_j38h6I5IgSfMRdo6zUKlhbi1NyC11zQDq1gZzAZ7zrWE7yQ7WGGWEwR5ksjqBz7aTFIfZ2J433KvHt2YUwMJmDmf47t22oKU01Px0jX0RkSmU2xqZrGirdRsViPSCMr_MrNXhO65ec5j4SrkUuP_60k7i5l7c8ateSSD1QMOgY0FG_V_YDATlcb3DVuYkTWpXtwaQ0qYm0eYqUxEBVHuOX-7iccRc_7mkBi2gezD1TY2wmB8fJXFwr2Tq4E7Qs3pNqjmLCbwvBDJ_SubMmj-Nwf5In8DNAMbtIgehI6LYI7AbiKFpp60kbavuNL6-KEJcNdz5QE0sD2sNSSukJRq-vQ1GbNhlFW_SsmrsjouvO32E45U_OHa-qlRHmMTZ7aGCY3RoreWhSZQdV9Vq68qwqeHkm4vmGMOyArBLFAfahTdR1ND82noyLN-5HWf5Zlufly9TMYT0/p.jpeg?size=512x512&size_mode=1'}/>
-                    <p>Starting at <b>$ 0.65</b> per image</p>
-                </div>
-            </div>
 
 
-         <section id='Imagemasking'>
-        <div className='picture' >
-         <div className='clippingpath3'>
-                  
-                    <img 
-                    className='shoeimg1'
-                    src="https://uca4f5206966c20c7136b88dcd75.previews.dropboxusercontent.com/p/thumb/AB3RFO8uIwoONScWQcF2Q4c8FAVkdBO4bQ8DInVfXzuo-0jfmvqOyh6COMl_GMeHh0y43Ip_dBbyZ-paMu1qlIhnyx4rmvQaQxf85vC7nmz0eQIdsBgMQuV2ElW0CGOVEi4Bh-IWx_2UOK98C2zjYJAJ6ipyX3VvVNvGpkXVZ6nZ8yISR1varN20IVethCtVUUc3Yh6gsjA1w8-l3Lj-Uf_UazlmgDtGPQkZjNT7FxJyXfQLlwnV8ZCOUA7KOwGP5Lss0dUpaXoh9YZRQWH4iui-9-BYe94SHfj2r05xk13oLiyfcVO4RhV7Ugo8P8LaLc9W9HokfxG9H0WOisaJJAHceQrQJy_OZ0Lz_1odiBQRi0wF1rKSLrfV9DxLLxMP1Ts/p.jpeg"/>
 
-                    <p>Starting at<b> $ 0.60</b> per image</p>
+                <div className='clippingpath' id='ShadowCreation'>
+                    <div className='clippingpath1'>
+                        <h3>Shadow Creation</h3>
+                        <p> Our shadow creation services can help add depth and dimension to your photos. We use advanced techniques to create realistic shadows that can make your images look more professional and visually appealing.
+                            Whether you need to add shadows to product photos for e-commerce or enhance the shadows in your portrait or landscape photos, our team of shadow creation experts can help. We work with a variety of file formats and can deliver your edited images in the format of your choice.
+                            Our shadow creation services are available for a variety of industries, including photography, e-commerce, and graphic design. We can also work with you to create custom shadow effects to achieve the look you desire.
+                            Don't let flat, lifeless photos hold you back - let our professional shadow creation services help you add depth and dimension to your images. Contact us today to learn more about how we can help you take your photos to the next level.
+                        </p>
+
+                    </div>
+                    <div className='clippingpath2'>
+                        <div> <ReactCompareSlider
+                            itemOne={<ReactCompareSliderImage src={shadowcreationbefore}
+                                alt="Image one" />}
+                            itemTwo={<ReactCompareSliderImage src={shadowcreationafter}
+                                alt="Image two" />}
+                            position={50}
+                            style={{ width: "100%" }}
+                        />
+                        </div>
+                        <div>
+                            <button className='viewsbtn'>view Samples</button>
+                        </div>
+                    </div>
                 </div>
-                <div className='clippingpath4'>
-                    <h3>Image Masking</h3>
-                    <p>With meticulous hand-drawn clipping paths and a keen eye for detail, we guarantee flawless 
-                        image cut-outs and crisp photo edges that will enhance 
-                        the visual appeal of your products, thereby driving more conversions.</p><br />
-                      <button className='viewsbtn'>view Samples</button>
-                      
+
+                <div className='clippingpath' id='GhostMannequin' >
+                    <div className='clippingpath1'>
+                        <h3>Ghost Mannequin services </h3>
+                        <p>Our ghost mannequin services can help you showcase your clothing products in a professional and visually appealing way. We use advanced techniques to remove the mannequin from your clothing photos and create a ghost mannequin effect, which makes the product appear as if it is being worn by an invisible model.
+                            Whether you need ghost mannequin services for e-commerce, fashion photography, or clothing catalogues, our team of experts can help. We work with a variety of clothing types and styles, including shirts, dresses, jackets, and more.
+                            Our ghost mannequin services can also include color correction, background removal, and other editing techniques to ensure your clothing products look their best. We can work with you to create custom effects to achieve the look you desire.
+                            Don't let mannequins detract from your clothing products - let our professional ghost mannequin services help you showcase your products in the best possible light. Contact us today to learn more about how we can help you take your clothing photos to the next level.
+                        </p><br />
+                    </div>
+                    <div className='clippingpath2'>
+                        
+                        <div> <ReactCompareSlider
+                            itemOne={<ReactCompareSliderImage src={GhostMannequinbefore}
+                                alt="Image one" />}
+                            itemTwo={<ReactCompareSliderImage src={GhostMannequinafter}
+                                alt="Image two" />}
+                            position={50}
+                            style={{ width: "100%" }}
+                        />
+                        
+                           </div>
+                        <div>
+                            <button className='viewsbtn'>view samples</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
 
 
-{/* 
+
+                <section id='Imagemasking'>
+                    <div className='clippingpath' >
+                        <div className='clippingpath1'>
+                            <h3>Image Masking</h3>
+                            <p>Our image masking services can help you isolate and edit specific areas of your photos with precision and accuracy. We use advanced techniques to create masks that allow us to edit or remove specific parts of your image, while leaving the rest of the image untouched.
+                                Whether you need to edit out a distracting background, remove unwanted objects or people, or adjust the color or brightness of specific areas of your image, our team of image masking experts can help. We work with a variety of file formats and can deliver your edited images in the format of your choice.
+                                Our image masking services are available for a variety of industries, including e-commerce, photography, and graphic design. We can also work with you to create custom image masks to achieve the look you desire.
+                                Don't let unwanted elements detract from your photos - let our professional image masking services help you isolate and edit specific areas of your images with precision and accuracy. Contact us today to learn more about how we can help you take your photos to the next level.
+                            </p><br />
+
+
+                        </div>
+                        <div className='clippingpath2'>
+                            <div>
+                                <img
+                                    className='shoeimg1'
+                                    src="https://uca4f5206966c20c7136b88dcd75.previews.dropboxusercontent.com/p/thumb/AB3RFO8uIwoONScWQcF2Q4c8FAVkdBO4bQ8DInVfXzuo-0jfmvqOyh6COMl_GMeHh0y43Ip_dBbyZ-paMu1qlIhnyx4rmvQaQxf85vC7nmz0eQIdsBgMQuV2ElW0CGOVEi4Bh-IWx_2UOK98C2zjYJAJ6ipyX3VvVNvGpkXVZ6nZ8yISR1varN20IVethCtVUUc3Yh6gsjA1w8-l3Lj-Uf_UazlmgDtGPQkZjNT7FxJyXfQLlwnV8ZCOUA7KOwGP5Lss0dUpaXoh9YZRQWH4iui-9-BYe94SHfj2r05xk13oLiyfcVO4RhV7Ugo8P8LaLc9W9HokfxG9H0WOisaJJAHceQrQJy_OZ0Lz_1odiBQRi0wF1rKSLrfV9DxLLxMP1Ts/p.jpeg" />
+                            </div>
+                            <div> <button className='viewsbtn'>view Samples</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                {/* 
          <div className='price'><h2>Price that match your needs</h2></div>
 
          <div className='price1'>
@@ -229,7 +273,7 @@ function Services(){
             <a>viewmore</a>
          </div><br/> */}
 
-         {/* <div className='offer'>
+                {/* <div className='offer'>
             <div className='ghost'>
                 <div className='ghost1'><h2>Checkout other services we offer</h2></div>
                 <div className='ghost2'>
@@ -263,9 +307,9 @@ function Services(){
             </div>
 
          </div> */}
-         </div>
+            </div>
 
-         <Footer/>
+            <Footer />
 
         </div>
     )
