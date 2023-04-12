@@ -120,17 +120,9 @@ function Contact() {
           </div>
 
         </div>
-        <Footer/>
-
-
-
-
-
-
-
-
       </section >
       
+      <Footer/>
 
     </div >
   )
