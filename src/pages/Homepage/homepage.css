@@ -76,6 +76,7 @@
 .sliderimg{
     width: 100%;
    height: auto;
+   border-radius: 10px;
 }
 
 .h-p-thirdDiv{
@@ -94,7 +95,7 @@
  }
 
 .h-p-thirdDiv p{
-    font-family: 'Open Sans';
+    font-family: inherit;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -168,7 +169,7 @@
 }
 
 .cardsecdesp{
-    font-family: 'Open Sans';
+    font-family: inherit;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -196,7 +197,7 @@
 }
 
 .servicesDiv p{
-    font-family: 'Open Sans';
+    font-family: inherit;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -247,7 +248,7 @@
 
 .servicetxts p{
 
-    font-family: 'Open Sans';
+    font-family: inherit;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -339,7 +340,7 @@ align-items: center;
     background: linear-gradient(111.49deg, rgb(231 231 231 / 48%) -8.95%, rgba(255, 255, 255, 0.4) 114%);
     backdrop-filter: blur(50px);
     padding: 15px;
-    margin: 8vh 18vw;
+    margin: 8vh 13vw;
     text-align: center;
     border-radius: 30px;
 }
@@ -493,7 +494,7 @@ color: #4B5563
     border-radius: 15px;
     padding: 12px;
     margin: 6px;
-    width: 270px;
+    width: max-content;
     height: 180px;
     display: flex;
     flex-direction: column;
@@ -546,6 +547,10 @@ color: #4B5563
  }
  .carousalitems{
     margin:5vh 1vh 1vw;
+} 
+
+.carouselimg{
+    margin: 5px;
 }
 
  .pricing-div{
@@ -666,4 +671,11 @@ color: #4B5563
     align-items: center;
     justify-content: center;
 }
+}
+
+@media screen and (max-width: 680px){
+
+    .H-ptopdiv{
+        min-height: 70vh;
+    }
 }
