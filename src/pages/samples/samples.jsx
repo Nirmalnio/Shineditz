@@ -33,13 +33,6 @@ import img21 from "../../Assets/Images/Watermark/MTL Studio..-33.jpg"
 import img22 from "../../Assets/Images/Watermark/MTL Studio..-34.jpg"
 import img23 from "../../Assets/Images/Watermark/MTL Studio..-35.jpg"
 
-
-
-
-
-
-
-
 function Samples() {
     return (
         <div className="samplemainDiv">
@@ -77,11 +70,6 @@ function Samples() {
                     <img src={img21} alt="" />
                     <img src={img22} alt="" />
                     <img src={img23} alt="" />
-                   
-
-
-
-
                 </div>
 
                 <div className="contactusstrip">
