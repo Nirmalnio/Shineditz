@@ -166,7 +166,7 @@ console.log(Option,"options");
       <div className='h-p-thirdDiv'>
         <h3>Empower your creation with Shineditz</h3>
 
-        <p>Sheneditz provides top-quality photo editing services including Photoshop clipping path, masking, touch-up, retouching, and more. With a team of experienced designers, we guarantee 100% quality work at low cost and quick turnaround time.
+        <p>Shineditz provides top-quality photo editing services including Photoshop clipping path, masking, touch-up, retouching, and more. With a team of experienced designers, we guarantee 100% quality work at low cost and quick turnaround time.
           Outsource your picture editing needs to us for cutting-edge results.</p>
       </div>
 
