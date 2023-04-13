@@ -97,14 +97,14 @@ function Contact() {
               <h3>Follow Us</h3>
 
               <div className='d-flex align-items-center'>
-       <div className='ml-2'><a href="https://www.facebook.com/shineditzz">
+       <div className='ml-2'><a href="https://www.facebook.com/shineditzz" target="_blank">
         {facebookicon}
        </a></div>
-       <div className='mx-2'><a href="https://www.youtube.com/channel/UCR0rBe3RisbD_tXq-FMeTFA">
+       <div className='mx-2'><a href="https://www.youtube.com/channel/UCR0rBe3RisbD_tXq-FMeTFA" target="_blank">
         {youtubeicon}</a></div>
-       <div className='mx-2'><a href="https://www.instagram.com/shineditzz/">
+       <div className='mx-2'><a href="https://www.instagram.com/shineditzz/" target="_blank">
         {instaIcon}</a></div>
-       <div className='mx-2'><a href="https://www.linkedin.com/in/aszen-technologies/">
+       <div className='mx-2'><a href="https://www.linkedin.com/in/aszen-technologies/" target="_blank">
         {linkedin}</a></div>
      </div>
 

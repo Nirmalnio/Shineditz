@@ -86,7 +86,9 @@ function Header() {
         <Offcanvas.Body>
           <div className='p-3 d-flex flex-column align-items-center mobdiv'>
             <Link to="/pricing"><div className='mob-options'>Pricing</div></Link>
-            <Link to="/services"><div className='mob-options'>services</div></Link>
+            <Link to="/services"><div className='mob-options'>Services</div></Link>
+            <Link to="/samples"><div className='mob-options'>Samples</div></Link>
+            <Link to="/aboutus"><div className='mob-options'>About us</div></Link>
             <Link to="/contact" style={{ textDecoration: "none" }}>
               <div className='contactus-btn2'>
                 Contact us

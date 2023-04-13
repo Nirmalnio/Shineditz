@@ -11,10 +11,13 @@
      align-items: center;
      justify-content: space-between; */
      margin-top: 90px;
-     margin-left:180px;
+     margin-left:0px;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
 }
 .clippingpath1{
-    width: 85%;
+    width: 95%;
 }
 
 .clippingpath h3 {

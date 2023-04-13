@@ -25,16 +25,17 @@ function Footer() {
         <div className='footeroptions'>
           <div>
             <b className='ben' >Product</b>
-            <span>Services</span>
-            <span>Samples</span>
-            <span>Pricing</span>
+            <Link to="/services" style={{textDecoration:"none"}}><span>Services</span></Link>
+            <Link to="/samples" style={{textDecoration:"none"}}><span>Samples</span></Link>
+            <Link to="/pricing" style={{textDecoration:"none"}}><span>Pricing</span></Link>
+
 
           </div>
 
           <div>
             <b className='ben'>Company</b>
-            <span>About Us</span>
-            <span>Contact us</span>
+            <Link to="/aboutus" style={{textDecoration:"none"}}> <span>About Us</span></Link>
+            <Link to="/contact" style={{textDecoration:"none"}}> <span>Contact us</span> </Link>
           </div>
 
           <div>
@@ -53,14 +54,14 @@ function Footer() {
         </div>
         <div>{""}</div>
         <div className='d-flex align-items-center'>
-          <div className='mx-2'><a href="https://www.facebook.com/shineditzz">
+          <div className='mx-2'><a href="https://www.facebook.com/shineditzz" target="_blank">
             {facebookicon}
           </a></div>
-          <div className='mx-2'><a href="https://www.youtube.com/channel/UCR0rBe3RisbD_tXq-FMeTFA">
+          <div className='mx-2'><a href="https://www.youtube.com/channel/UCR0rBe3RisbD_tXq-FMeTFA" target="_blank">
             {youtubeicon}</a></div>
-          <div className='mx-2'><a href="https://www.instagram.com/shineditzz/">
+          <div className='mx-2'><a href="https://www.instagram.com/shineditzz/" target="_blank">
             {instaIcon}</a></div>
-          <div className='mx-2'><a href="https://www.linkedin.com/in/aszen-technologies/">
+          <div className='mx-2'><a href="https://www.linkedin.com/in/aszen-technologies/" target="_blank">
             {linkedin}</a></div>
         </div>
       </div>
