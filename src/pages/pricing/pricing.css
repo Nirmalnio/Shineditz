@@ -1,5 +1,8 @@
 .containerdiv {
     padding: 0 4vw;
+    border-radius: 30px;
+    margin:8vh 5vw;
+    background: linear-gradient(111.49deg, rgb(231 231 231 / 48%) -8.95%, rgba(255, 255, 255, 0.4) 114%);
 }
 
 .headdiv {
@@ -56,12 +59,12 @@
     background: radial-gradient(293.15% 5244.37% at 100% 121.13%, rgba(255, 154, 0, 0.2) 0%, rgba(253, 51, 31, 0.2) 100%);;
     box-shadow: 4px 4px 8px rgba(215, 215, 215, 0.25);
     border-radius: 15px;
-    width: 200px;
+    /* width: 200px; */
     height: 100px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 900;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 32px;
     text-align: center;
     color: #212123;
@@ -74,13 +77,13 @@
     box-shadow: 4px 4px 8px rgba(215, 215, 215, 0.25);
     border-radius: 15px;
     background-color: white;
-    width: 200px;
+    /* width: 200px; */
     height: 100px;
     margin: 0px 10px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .card2 {
@@ -169,6 +172,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding: 15px;
 }
 
 @media screen and (max-width:1320px) {
