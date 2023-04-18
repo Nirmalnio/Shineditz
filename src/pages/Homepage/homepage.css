@@ -227,7 +227,7 @@
     justify-content: space-between;
     background: linear-gradient(168.36deg, #FFEBCC -22.35%, #FF5A55 121.11%), rgba(237, 237, 237, 0.2);
     margin-bottom: 20px; 
-    height: 200px;
+    height: auto;
     /* margin-top: -132px; */
     transition: transform 0.4s ease-in-out;
 }
@@ -342,6 +342,11 @@ align-items: center;
     margin: 8vh 13vw;
     text-align: center;
     border-radius: 30px;
+    max-width: 1060px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .pricingplanDiv h5{
