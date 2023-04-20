@@ -271,6 +271,7 @@ console.log(Option,"options");
         
         {/*<<======= princing ==========>> */}
 
+     <div className='d-flex justify-content-center'>
         <div className='pricingplanDiv'>
           <h5>Choose a plan that suits you</h5>
           <div className='pricing-div'>
@@ -320,7 +321,7 @@ console.log(Option,"options");
 
           </div>
         </div>
-
+        </div>
 
         <div className='reviewsdiv'>
           <h5>1,850+ satisfied customers</h5>

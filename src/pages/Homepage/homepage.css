@@ -340,7 +340,7 @@ align-items: center;
     background: linear-gradient(111.49deg, rgb(231 231 231 / 48%) -8.95%, rgba(255, 255, 255, 0.4) 114%);
     backdrop-filter: blur(50px);
     padding: 15px;
-    margin: 8vh 13vw;
+    margin: 8vh 0%;
     text-align: center;
     border-radius: 30px;
     max-width: 1060px;
@@ -348,6 +348,7 @@ align-items: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .pricingplanDiv h5{
