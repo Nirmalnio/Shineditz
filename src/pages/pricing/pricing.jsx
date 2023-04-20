@@ -78,7 +78,7 @@ function Pricing() {
                     <div>
                         <button onClick={()=>setprice("Photo Retouching")}
                         className={price==="Photo Retouching"?"buttoncardsactive":"buttoncards"}
-                        >photo retouching</button>
+                        >Photo Retouching</button>
                     </div>
                     <div>
                         <button onClick={()=>setprice("Color Correction")}

@@ -37,6 +37,7 @@
     -webkit-text-fill-color: transparent;
     margin: 0;
 }
+
 .h-p-secndDiv{
     margin: 4vh 12vw;
 }
@@ -98,12 +99,10 @@
     font-family: inherit;
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 32px;
-    /* or 145% */
-    
-    text-align: center;
-    
+    /* or 145% */    
+    text-align: center;    
     color: #4B5563;
 }
 
@@ -172,7 +171,7 @@
     font-family: inherit;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 28px;
     color: #4B5563;
     margin-top: 12px;
@@ -240,7 +239,7 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 800;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 44px;
     color: #212123;
     margin-bottom: 12px;
@@ -251,7 +250,7 @@
     font-family: inherit;
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 15px;
     line-height: 32px;
     /* or 145% */
     text-align: start;
@@ -343,6 +342,11 @@ align-items: center;
     margin: 8vh 13vw;
     text-align: center;
     border-radius: 30px;
+    max-width: 1060px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .pricingplanDiv h5{
@@ -536,6 +540,9 @@ color: #4B5563
         flex-direction: column;
         align-items: center;
     }
+    .H-ptopdiv{
+        min-height: 110vh;
+       }
 }
 
 @media screen and (max-width: 880px){
@@ -551,6 +558,9 @@ color: #4B5563
 
 .carouselimg{
     margin: 5px;
+}
+.carouselimg{
+    margin:20px;
 }
 
  .pricing-div{
@@ -610,7 +620,7 @@ color: #4B5563
 }
 
 .H-ptopdiv{
- min-height: 110vh;
+ min-height: 80vh;
 }
 
 .h-p-thirdDiv h3{
@@ -640,11 +650,11 @@ color: #4B5563
     padding: 15px;
 }
 .servicetxts h5{
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .servicetxts p{
-    font-size: 18px;
+    font-size: 14px;
     line-height: 26px;
 }
 .pricingdetails{

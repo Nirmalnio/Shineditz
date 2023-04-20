@@ -1,8 +1,15 @@
-import { React, useState } from 'react'
+import { React, useState,useEffect } from 'react'
 import Header from '../../Components/Head/Header'
 import Footer from '../../Components/Footer/Footer';
 import "./contact.css";
 import { facebookicon,youtubeicon,instaIcon,linkedin } from '../../Assets/icon'
+import Spinner from 'react-bootstrap/Spinner';
+import Modal from 'react-bootstrap/Modal';
+import success from "../../Assets/Images/tickicon.png"
+// import nodemailer from 'nodemailer';
+// import stream from 'stream-browserify';
+
+
 function Contact() {
 
   const [name, setName] = useState("");
@@ -10,9 +17,50 @@ function Contact() {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [loader,setloader] = useState(false)
+  const [show,setshow] = useState(false)
+
+
+  useEffect(()=>{
+       window.scrollTo(0,0)
+  },[])
+
+  const handleClose = ()=>{
+    setshow(false)
+  }
+
+  const clear = () =>{
+       setName("")
+       setCategory("")
+       setPhone("")
+       setMessage("")
+       setEmail("")
+  }
+
   const sendmessage = (e) => {
+    setloader(true)
     e.preventDefault();
-    // Handle form submission here
+    if(window.Email){
+      window.Email.send({
+        SecureToken : "e797746d-9287-4270-aedb-d300c34bff32",
+        To : 'shhineditz@gmail.com',
+        From : "shhineditz@gmail.com",
+        Subject : `Request service from ${category}`,
+        Body : `Name : ${name},
+                email : ${email},
+                phone Number : ${phone},
+                message : ${message}`
+    }).then((resp)=>{
+
+      console.log(resp,"respoomce");
+      setloader(false)
+      setshow(true)
+      clear()
+      window.scrollTo(0,0)
+    }
+    );
+    }
+ 
   };
 
 
@@ -79,8 +127,10 @@ function Contact() {
 
             </div>
 
-
-            <button className='buttonsmt  ' type="submit">Send message</button>
+            {loader? 
+            <button className='buttonsmt' ><Spinner animation="border" variant="light" /></button> :
+            <button className='buttonsmt' type="submit">Send message</button>
+            }
           </form>
         </div>
 
@@ -123,6 +173,17 @@ function Contact() {
       </section >
       
       <Footer/>
+
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Body>
+          <div style={{display:"flex",flexDirection:"column",alignItems:"center"}}>
+                  <img src={success} alt="success" style={{width:"80px",height:"auto"}}/>
+                   <h1>Sent!</h1>
+                   <span className='mt-3'>Our meet will contact you soon.</span>
+          </div>
+        </Modal.Body>
+      </Modal>
 
     </div >
   )

@@ -3,7 +3,7 @@
     background-image: url('../../Assets/Images/plainbg.png');
     background-position: center;
     background-size: cover;
-    padding: 5vh 8vw;
+    /* padding: 5vh 8vw; */
 }
 
 .clippingpath{
@@ -30,7 +30,7 @@
     color: #212123;
 }
 .clippingpath p {
-    font-family: 'Open Sans';
+    font-family: inherit;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
