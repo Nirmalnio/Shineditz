@@ -231,7 +231,11 @@
     /* margin-top: -132px; */
     transition: transform 0.4s ease-in-out;
 }
-
+  
+.servicetxts{
+    width: 84%;
+    margin-right: 15px;
+}
 /* .servisecard:hover {
     transform: translateY(-120px); 
   } */
@@ -246,15 +250,12 @@
 }
 
 .servicetxts p{
-
     font-family: inherit;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 32px;
-    /* or 145% */
     text-align: start;
-    
     color: #212123;
 }
 
@@ -681,6 +682,11 @@ color: #4B5563
     align-items: center;
     justify-content: center;
 }
+.servicetxts{
+    width: 100%;
+    margin-right: 1px;
+}
+
 }
 
 @media screen and (max-width: 680px){

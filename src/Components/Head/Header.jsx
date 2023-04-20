@@ -85,11 +85,11 @@ function Header() {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <div className='p-3 d-flex flex-column align-items-center mobdiv'>
-            <Link to="/pricing"><div className='mob-options'>Pricing</div></Link>
-            <Link to="/services"><div className='mob-options'>Services</div></Link>
-            <Link to="/samples"><div className='mob-options'>Samples</div></Link>
-            <Link to="/aboutus"><div className='mob-options'>About us</div></Link>
-            <Link to="/contact" style={{ textDecoration: "none" }}>
+            <Link className='mob-options' to="/pricing"><div >Pricing</div></Link>
+            <Link className='mob-options' to="/services"><div >Services</div></Link>
+            <Link className='mob-options' to="/samples"><div >Samples</div></Link>
+            <Link className='mob-options' to="/aboutus"><div >About us</div></Link>
+            <Link className='mob-options' to="/contact" style={{ textDecoration: "none" }}>
               <div className='contactus-btn2'>
                 Contact us
               </div>

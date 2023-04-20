@@ -6,6 +6,8 @@ import { facebookicon,youtubeicon,instaIcon,linkedin } from '../../Assets/icon'
 import Spinner from 'react-bootstrap/Spinner';
 import Modal from 'react-bootstrap/Modal';
 import success from "../../Assets/Images/tickicon.png"
+import Alert from 'react-bootstrap/Alert';
+import Button from 'react-bootstrap/Button';
 // import nodemailer from 'nodemailer';
 // import stream from 'stream-browserify';
 
@@ -19,7 +21,8 @@ function Contact() {
   const [message, setMessage] = useState("");
   const [loader,setloader] = useState(false)
   const [show,setshow] = useState(false)
-
+  const [alt,setAlt] = useState(false)
+  const [err,setErr] = useState(false)
 
   useEffect(()=>{
        window.scrollTo(0,0)
@@ -36,6 +39,9 @@ function Contact() {
        setMessage("")
        setEmail("")
   }
+
+    
+
 
   const sendmessage = (e) => {
     setloader(true)
@@ -64,9 +70,40 @@ function Contact() {
   };
 
 
+  const onsubmit =() =>{
+     if(name!==""&&email!==""){
+      sendmessage()
+     }else {
+      setAlt(true)
+     }
+  }
+
+  // useEffect(()=>{
+    
+  //   if(alt){
+  //     setTimeout(() => {
+  //       setAlt(false)
+  //      }, 3000);
+  //   }
+    
+  // },[alt])
+
+
+
+
   return (
     <div>
       <Header />
+
+      {alt&&
+      <div className='container mt-2'>
+      <Alert variant="danger" onClose={() => setAlt(false)} dismissible>
+    <p>
+       Fill all Mandatory fields.
+    </p>
+    </Alert>
+    </div>
+    }
 
       <section className='contcontainer'>
         <h2 className='contacth2'>Send message?</h2>
@@ -75,7 +112,7 @@ function Contact() {
         </p>
 
         <div>
-          <form onSubmit={sendmessage}>
+          <form onSubmit={onsubmit}>
             <div className='flexdisplay'>
               <div className='borderinput'>
 
@@ -129,7 +166,7 @@ function Contact() {
 
             {loader? 
             <button className='buttonsmt' ><Spinner animation="border" variant="light" /></button> :
-            <button className='buttonsmt' type="submit">Send message</button>
+            <button className='buttonsmt' onClick={onsubmit}>Send message</button>
             }
           </form>
         </div>

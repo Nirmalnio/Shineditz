@@ -17,11 +17,12 @@ import imagemaskingbefore from "../../Assets/Images/After before/Image Masking/b
 import imagemaskingafter from "../../Assets/Images/After before/Image Masking/after.jpg"
 import PhotoRetouchingbefore from "../../Assets/Images/After before/Photoretouching/before.jpg"
 import PhotoRetouchingafter from "../../Assets/Images/After before/Photoretouching/after.jpg"
-
+import { useNavigate } from 'react-router';
 function Services() {
 
     const myDivRef = createRef();
-
+    
+    const Navigate = useNavigate()
     useEffect(() => {
         if (window.location.hash) {
             const targetId = window.location.hash.slice(1);
@@ -35,8 +36,14 @@ function Services() {
                 window.scrollTo({ top: y, behavior: "smooth" })
             }
         }
-    }, []);
+    }, [window.location.hash,document]);
 
+
+
+ 
+    const navigate = ()=>{
+        Navigate('/samples')
+    }
     return (
         <div >
             <Header />
@@ -58,7 +65,7 @@ function Services() {
                         />
                         </div>
 
-                        <div> <button className='viewsbtn'>View more Samples</button></div>
+                        <div> <button className='viewsbtn' onClick={navigate}>View more Samples</button></div>
 
                         {/* <p>Starting at <b>$ 0.30</b> per image</p> */}
                     </div>
@@ -85,7 +92,7 @@ function Services() {
                             style={{ width: "100%" }}
                         /></div>
                         <div>
-                            <button className='viewsbtn'>View more Samples</button>
+                            <button className='viewsbtn' onClick={navigate}>View more Samples</button>
                         </div>
                     </div>
                 </div>
@@ -113,7 +120,7 @@ function Services() {
 
                         </div>
                         <div>
-                            <button className='viewsbtn'>View more Samples</button>
+                            <button className='viewsbtn' onClick={navigate}>View more Samples</button>
                         </div>
                     </div>
                 </div>
@@ -141,7 +148,7 @@ function Services() {
                         />
                         </div>
                         <div>
-                            <button className='viewsbtn'>View more Samples</button>
+                            <button className='viewsbtn' onClick={navigate}>View more Samples</button>
                         </div>
                     </div>
                 </div>
@@ -167,7 +174,7 @@ function Services() {
                         />                        
                            </div>
                         <div>
-                            <button className='viewsbtn'>View more Samples</button>
+                            <button className='viewsbtn' onClick={navigate}>View more Samples</button>
                         </div>
                     </div>
                 </div>
@@ -196,7 +203,7 @@ function Services() {
                             style={{ width: "100%" }}
                         />                        
                            </div>
-                            <div> <button className='viewsbtn'>View more Samples</button>
+                            <div> <button className='viewsbtn' onClick={navigate}>View more Samples</button>
                             </div>
                         </div>
                     </div>
