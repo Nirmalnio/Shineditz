@@ -2,7 +2,10 @@
     padding: 0 4vw;
     border-radius: 30px;
     margin:8vh 5vw;
-    background: linear-gradient(111.49deg, rgb(231 231 231 / 48%) -8.95%, rgba(255, 255, 255, 0.4) 114%);
+    background-image: url('../../Assets//Images/plainbg.png');
+    background-position: center;
+    background-size: cover;
+    /* background: linear-gradient(111.49deg, rgb(231 231 231 / 48%) -8.95%, rgba(255, 255, 255, 0.4) 114%); */
 }
 
 .headdiv {
@@ -10,6 +13,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 6vh;
+    margin-bottom: 8vh;
     text-align: center;
     padding: 0 4vw;
 }
@@ -175,6 +179,89 @@
     padding: 15px;
 }
 
+.iconimg{
+    background: linear-gradient(165.22deg, rgba(255, 119, 178, 0.8) -25.3%, rgba(255, 225, 186, 0.8) 116.66%), rgba(237, 237, 237, 0.2);
+    /* padding: 6px; */
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pricecardDiv{
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 26px;
+    box-shadow: 4px 4px 8px rgba(215, 215, 215, 0.318);
+    margin-bottom: 26px;
+}
+
+ .pricingheading {
+    font-family:inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    color: #212123;
+ }
+
+ .pricingdivsec{
+    display: flex;
+    align-items: center;
+ }
+
+ .pricingsection{
+    border-right: 2px solid #D0D0D0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .pricingsection b{
+    font-family:inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #212123;
+    margin-bottom: 20px;
+ }
+
+ .pricingsection span {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #4B5563;
+ }
+
+ .pricingbtn{
+    text-decoration: none;
+    border: 1.5px solid #FD331F;
+    padding: 12px 20px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    background: radial-gradient(293.15% 5244.37% at 100% 121.13%, #FF9A00 0%, #FD331F 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    border-radius: 30px;
+ }
 @media screen and (max-width:1320px) {
     .buttoncards{
         width: 150px;
@@ -233,4 +320,44 @@
   .headdiv{
     margin: 0px;
   }
+}
+
+
+@media screen and (max-width:1180px) {
+.containerdiv {
+  margin: 6vh 2vw;
+}
+
+.headdiv p{
+    font-size: 18px;
+}
+.pricecardDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricingcard1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricingdivsec{
+    margin: 20px 0px;
+}
+.pricingsection{
+    padding: 8px;
+}
+.pricingsection b{
+    font-size: 16px;
+    line-height: 26px;
+}
+.pricingsection span{
+    font-size: 14px;
+}
+
+.pricingbtn{
+    margin-top: 20px;
+}
 }
