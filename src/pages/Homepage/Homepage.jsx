@@ -30,7 +30,8 @@ function Homepage() {
       headin: "Image Masking",
       desp: "Prepare for future photo editing with image files you can use for text wrapping, background removal, print media, and the web.",
       background: "linear-gradient(165.22deg, #CF8BF3 -25.3%, rgba(253, 185, 155, 0.5) 116.66%), rgba(237, 237, 237, 0.2)",
-      image: serives1
+      image: serives1 
+      
     },
     {
       id: 2,
@@ -164,9 +165,9 @@ console.log(Option,"options");
       </div>
 
       <div className='h-p-thirdDiv'>
-        <h3>Empower your creation with Shineditz</h3>
+        <h3>Empower your creation with vistaeditz</h3>
 
-        <p>Shineditz provides top-quality photo editing services including Photoshop clipping path, masking, touch-up, retouching, and more. With a team of experienced designers, we guarantee 100% quality work at low cost and quick turnaround time.
+        <p>vistaeditz provides top-quality photo editing services including Photoshop clipping path, masking, touch-up, retouching, and more. With a team of experienced designers, we guarantee 100% quality work at low cost and quick turnaround time.
           Outsource your picture editing needs to us for cutting-edge results.</p>
       </div>
 
@@ -239,7 +240,7 @@ console.log(Option,"options");
        <img src={global} alt=""  className='globalimg' />
 
         <div className='globalbtm'>
-               <h5 className='globalrighttxt'>See what sets Shineditz apart</h5>
+               <h5 className='globalrighttxt'>See what sets vistaeditz apart</h5>
 
                <div className='globalgird'>
                       <div className='globalservcard1'>

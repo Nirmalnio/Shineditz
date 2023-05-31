@@ -43,8 +43,8 @@ function Contact() {
     if(window.Email){
       window.Email.send({
         SecureToken : "e797746d-9287-4270-aedb-d300c34bff32",
-        To : 'shhineditz@gmail.com',
-        From : "shhineditz@gmail.com",
+        To : 'vistaeditz@gmail.com',
+        From : "vistaeditz@gmail.com",
         Subject : `Request service from ${category}`,
         Body : `Name : ${name},
                 email : ${email},
@@ -142,17 +142,17 @@ function Contact() {
               Bengaluru,Karnataka 560 102</small>
               <h3>Ring us,</h3>
               <small>
-              +91 99725 64671
+              +91 95385 37778
               </small>
               <h3>Follow Us</h3>
 
               <div className='d-flex align-items-center'>
-       <div className='ml-2'><a href="https://www.facebook.com/shineditzz">
+       <div className='ml-2'><a href="https://www.facebook.com/vistaeditzz">
         {facebookicon}
        </a></div>
        <div className='mx-2'><a href="https://www.youtube.com/channel/UCR0rBe3RisbD_tXq-FMeTFA">
         {youtubeicon}</a></div>
-       <div className='mx-2'><a href="https://www.instagram.com/shineditzz/">
+       <div className='mx-2'><a href="https://www.instagram.com/vistaeditzz/">
         {instaIcon}</a></div>
        <div className='mx-2'><a href="https://www.linkedin.com/in/aszen-technologies/">
         {linkedin}</a></div>
@@ -162,9 +162,9 @@ function Contact() {
           <div className='contactcard'>
           <h3 cardh6>Mails for you,</h3>
             <h6>Orders</h6>
-            <d className='mail' >info@shineditz.com</d>
+            <d className='mail' >david@vistaeditz.com</d>
             <h6>Support</h6>
-            <d className='mail'>shhineditz@gmail.com </d> <br></br>
+            <d className='mail'>vistaeditz@gmail.com </d> <br></br>
 
             <button className='button2'>Check out the services we offer</button>
           </div>

@@ -32,14 +32,14 @@ function Header() {
     <>
       <div className='headerDiv'>
         <div>
-          <Link to="/"> <img src={Logo} alt="Shineditz" className='headerlogo' /></Link><br />
-          <small style={{ marginLeft: "20px", marginTop: "-10px" }}>powered by <img src={AszenLogo} className='AszenLogo' alt="Aszentech" /></small>
+          <Link to="/"> <img src={Logo} alt="vistaeditz" className='headerlogo' /></Link><br />
+          {/* <small style={{ marginLeft: "20px", marginTop: "-10px" }}>powered by <img src={AszenLogo} className='AszenLogo' alt="Aszentech" /></small> */}
         </div>
         <div className='d-flex align-items-center'>
         <div className='headermenu'>
           <ul>
             <li className='dropdown'>
-              <div className='dropbtn'>Services&nbsp;{arrow}</div>
+              <div className='dropbtn'>Photo/e-commerce&nbsp;{arrow}</div>
               <div className='dropdown-content'>
                 <Link className="drpdwnlink" to="/services"
                 // onClick={()=>handleOptionClick("ClippingPath")}
@@ -81,7 +81,7 @@ function Header() {
 
       <Offcanvas show={show} onHide={handleClose} /* responsive="lg" */ placement='end'>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Shineditz</Offcanvas.Title>
+          <Offcanvas.Title>vistaeditz</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
           <div className='p-3 d-flex flex-column align-items-center mobdiv'>

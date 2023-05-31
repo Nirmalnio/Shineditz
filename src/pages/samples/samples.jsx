@@ -77,12 +77,12 @@ function Samples() {
                         <h6>Interested in us!</h6>
                         <div>
                             <div className='d-flex align-items-center socialiocn'>
-                                <div className='mx-2'><a href="https://www.facebook.com/shineditzz">
+                                <div className='mx-2'><a href="https://www.facebook.com/vistaeditzz">
                                     {facebookicon}
                                 </a></div>
                                 <div className='mx-2'><a href="https://www.youtube.com/channel/UCR0rBe3RisbD_tXq-FMeTFA">
                                     {youtubeicon}</a></div>
-                                <div className='mx-2'><a href="https://www.instagram.com/shineditzz/">
+                                <div className='mx-2'><a href="https://www.instagram.com/vistaeditzz/">
                                     {instaIcon}</a></div>
                                 <div className='mx-2'><a href="https://www.linkedin.com/in/aszen-technologies/">
                                     {linkedin}</a></div>

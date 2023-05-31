@@ -18,8 +18,7 @@ function Footer() {
         <div className='logofoot'>
           <img src={Logo} alt="" className='footerlogo' /> 
           {/* <span className='footerlogotxt'>Enhancing photo images</span>  */}
-          <sub className='sub' > Powered by<img src={AszenLogo} /* onClick={aszen} */ className='AszenLogoFooter' alt="Aszentech" /> 
-          </sub>
+          
         </div>
 
         <div className='footeroptions'>
@@ -53,12 +52,12 @@ function Footer() {
         </div>
         <div>{""}</div>
         <div className='d-flex align-items-center'>
-          <div className='mx-2'><a href="https://www.facebook.com/shineditzz">
+          <div className='mx-2'><a href="https://www.facebook.com/vistaeditzz">
             {facebookicon}
           </a></div>
           <div className='mx-2'><a href="https://www.youtube.com/channel/UCR0rBe3RisbD_tXq-FMeTFA">
             {youtubeicon}</a></div>
-          <div className='mx-2'><a href="https://www.instagram.com/shineditzz/">
+          <div className='mx-2'><a href="https://www.instagram.com/vistaeditzz/">
             {instaIcon}</a></div>
           <div className='mx-2'><a href="https://www.linkedin.com/in/aszen-technologies/">
             {linkedin}</a></div>
