@@ -27,6 +27,10 @@ function Header() {
     window.location.href = "/services" + '#' + id;
   };
 
+  const handleclickOption =(id) =>{
+    window.location.href = "/realestate-services" + '#' + id;
+  };
+
 
   return (
     <>
@@ -38,6 +42,36 @@ function Header() {
         <div className='d-flex align-items-center'>
         <div className='headermenu'>
           <ul>
+          <li className='dropdown'>
+              <div className='dropbtn'>Real Estate Services&nbsp;{arrow}</div>
+              <div className='dropdown-content'>
+                <Link className="drpdwnlink" to="/realestate-services"
+                onClick={()=>handleclickOption("HDRphotoediting")}
+                >HDR Photo Editing </Link>
+                <Link className="drpdwnlink" to="/realestate-services"
+                  onClick={() => handleclickOption("Flash/Ambient Editing")}
+                >Flash/Ambient Editing  </Link>
+                <Link className="drpdwnlink" to="/realestate-services"
+                  onClick={() => handleclickOption("Panorama Stitching/Editing")}
+                >Panorama Stitching/Editing </Link>
+                <Link className="drpdwnlink" to="/realestate-services"
+                  onClick={() => handleclickOption("Aerial Editing")}
+                >Aerial Editing </Link>
+                <Link className="drpdwnlink" to="/realestate-services"
+                  onClick={() => handleclickOption("Sky,Lawn and Pool Replacement")}
+                >Sky,Lawn and Pool Replacement </Link>
+                <Link className='drpdwnlink' to="/realestate-services"
+                  onClick={() => handleclickOption("Pro Image Enhancements")}
+                >Pro Image Enhancements</Link>
+                <Link className='drpdwnlink' to="/realestate-services"
+                  onClick={() => handleclickOption("Weather Removal/Day to Dusk")}
+                >Weather Removal/Day to Dusk </Link>
+                <Link className='drpdwnlink' to="/realestate-services"
+                  onClick={() => handleclickOption("Re Video-editing ")}
+                >Re Video-editing </Link>
+              </div>
+            </li>
+
             <li className='dropdown'>
               <div className='dropbtn'>Photo/e-commerce&nbsp;{arrow}</div>
               <div className='dropdown-content'>
