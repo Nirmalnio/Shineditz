@@ -16,8 +16,6 @@ function Header() {
   const [links, setlinks] = useState()
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
-
   const arrow = <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
     <path d="M12 16.5l-6-6 1.5-1.5 4.5 4.5 4.5-4.5 1.5 1.5z" fill="currentColor" />
   </svg>
