@@ -33,6 +33,7 @@
     line-height: 60px;
     text-align: center;
     background: linear-gradient(90deg, #F59E0B 17.62%, #EA580C 48.37%, #EAB308 82.51%);
+    background-clip: inherit;
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
     margin: 0;
@@ -439,7 +440,7 @@ align-items: center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+    /* text-fill-color: transparent; */
 }
 
 .pricing-box{

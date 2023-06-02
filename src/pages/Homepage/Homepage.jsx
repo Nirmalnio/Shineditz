@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 import Header from "../../Components/Head/Header";
 import "./homepage.css";
 // import {useHistory} from "react-router"
-import Carousel from "react-bootstrap/Carousel";
-import silder1 from "../../Assets/Images/Banner 1.jpg";
-import silder2 from "../../Assets/Images/Banner 2.jpg";
-import silder3 from "../../Assets/Images/Banner 3.jpg";
-import silder4 from "../../Assets/Images/Banner 4.gif";
-import serives1 from "../../Assets/Images/hair-masking.jpg";
-import serives2 from "../../Assets/Images/Photoshop-mannequin-effects.jpg";
-import serives3 from "../../Assets/Images/retouch image.jpg";
-import serives4 from "../../Assets/Images/shadow.jpg";
-import serives5 from "../../Assets/Images/color-correction.jpg";
+// import Carousel from "react-bootstrap/Carousel";
+// import silder1 from "../../Assets/Images/Banner 1.jpg";
+// import silder2 from "../../Assets/Images/Banner 2.jpg";
+// import silder3 from "../../Assets/Images/Banner 3.jpg";
+// import silder4 from "../../Assets/Images/Banner 4.gif";
+// import serives1 from "../../Assets/Images/hair-masking.jpg";
+// import serives2 from "../../Assets/Images/Photoshop-mannequin-effects.jpg";
+// import serives3 from "../../Assets/Images/retouch image.jpg";
+// import serives4 from "../../Assets/Images/shadow.jpg";
+// import serives5 from "../../Assets/Images/color-correction.jpg";
 import global from "../../Assets/Images/globe.png";
 import {
   handicon,
