@@ -5,8 +5,8 @@ import shoe1 from "../../Assets/Images/Banner 2.jpg"
 import Footer from '../../Components/Footer/Footer'
 import { linkshare } from '../../Assets/icon'
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
-import clipingpathimg from "../../Assets/Images/After before/Clipping path/before.jpg"
-import clipingpath1img from "../../Assets/Images/After before/Clipping path/after.jpg"
+import clippingpathimg from "../../Assets/Images/After before/Clipping path/before.jpg"
+import clippingpath1img from "../../Assets/Images/After before/Clipping path/after.jpg"
 import colorcorrectionbefore from "../../Assets/Images/After before/Color Correction Services/before.jpg"
 import colorcorrectionafter from "../../Assets/Images/After before/Color Correction Services/after.jpg"
 import shadowcreationbefore from "../../Assets/Images/After before/shadow creation/before.jpg"
@@ -50,8 +50,8 @@ function Services() {
                     </div>
                     <div className='clippingpath2'>
                         <div> <ReactCompareSlider
-                            itemOne={<ReactCompareSliderImage src={clipingpathimg} alt="Image one" />}
-                            itemTwo={<ReactCompareSliderImage src={clipingpath1img}
+                            itemOne={<ReactCompareSliderImage src={clippingpathimg} alt="Image one" />}
+                            itemTwo={<ReactCompareSliderImage src={clippingpath1img}
                                 alt="Image two" />}
                             position={50}
                             style={{ width: "100%" }}
