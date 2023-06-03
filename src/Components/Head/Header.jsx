@@ -43,6 +43,33 @@ function Header() {
         <div className='d-flex align-items-center'>
         <div className='headermenu'>
           <ul>
+
+            
+          <li className='dropdown'>
+              <div className='dropbtn'>Photo/e-commerce&nbsp;{arrow}</div>
+              <div className='dropdown-content'>
+                <Link className="drpdwnlink" to="/services"
+                // onClick={()=>handleOptionClick("ClippingPath")}
+                >Clipping path</Link>
+                <Link className="drpdwnlink" to="/services"
+                  onClick={() => handleOptionClick("Color_Correction_Services")}
+                >Color correction</Link>
+                <Link className="drpdwnlink" to="/services"
+                  onClick={() => handleOptionClick("ShadowCreation")}
+                >shadow correstion</Link>
+                <Link className="drpdwnlink" to="/services"
+                  onClick={() => handleOptionClick("GhostMannequin")}
+                >Ghost removal</Link>
+                <Link className="drpdwnlink" to="/services"
+                  onClick={() => handleOptionClick("Imagemasking")}
+                >Image Masking</Link>
+                <Link className='drpdwnlink' to="/services"
+                  onClick={() => handleOptionClick("PhotoRetouching")}
+                >Photo Retouching</Link>
+              </div>
+            </li>
+
+            
           <li className='dropdown'>
               <div className='dropbtn'>Real Estate Services&nbsp;{arrow}</div>
               <div className='dropdown-content'>
@@ -73,29 +100,6 @@ function Header() {
               </div>
             </li>
 
-            <li className='dropdown'>
-              <div className='dropbtn'>Services&nbsp;{arrow}</div>
-              <div className='dropdown-content'>
-                <Link className="drpdwnlink" to="/services"
-                // onClick={()=>handleOptionClick("ClippingPath")}
-                >Clipping path</Link>
-                <Link className="drpdwnlink" to="/services"
-                  onClick={() => handleOptionClick("Color_Correction_Services")}
-                >Color correction</Link>
-                <Link className="drpdwnlink" to="/services"
-                  onClick={() => handleOptionClick("ShadowCreation")}
-                >shadow correstion</Link>
-                <Link className="drpdwnlink" to="/services"
-                  onClick={() => handleOptionClick("GhostMannequin")}
-                >Ghost removal</Link>
-                <Link className="drpdwnlink" to="/services"
-                  onClick={() => handleOptionClick("Imagemasking")}
-                >Image Masking</Link>
-                <Link className='drpdwnlink' to="/services"
-                  onClick={() => handleOptionClick("PhotoRetouching")}
-                >Photo Retouching</Link>
-              </div>
-            </li>
 
             <Link to='/samples' style={{ textDecoration: "none" }}><li>Samples</li></Link>
             <Link to="/pricing" style={{ textDecoration: "none" }} ><li>Pricing</li> </Link>
