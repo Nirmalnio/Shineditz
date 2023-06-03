@@ -94,7 +94,7 @@ function Services() {
           </div>
         </div>
 
-        <div className="clippingpath" id="PhotoRetouching ">
+        <div className="clippingpath" id="PhotoRetouching">
           <div className="clippingpath1">
             <h3>Photo retouching Services</h3>
             <p>
