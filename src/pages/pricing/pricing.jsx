@@ -118,8 +118,8 @@ function Pricing() {
 
                 </div>
                 <div className="submitbutton" >
-                    <div> <button className='button3' type="submit">View Samples</button></div>
-                    <div> <button className='button1' type="submit">Contact US</button></div>
+                    <div><Link to= '/samples'> <button className='button3' type="submit">View Samples</button> </Link></div>
+                    <div><Link to= '/contact'> <button className='button1' type="submit">Contact US</button> </Link></div>
                 </div>
             </div>
             {/* <div>

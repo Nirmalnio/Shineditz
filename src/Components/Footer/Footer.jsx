@@ -24,22 +24,25 @@ function Footer() {
         <div className='footeroptions'>
           <div>
             <b className='ben' >Product</b>
-            <span>Services</span>
-            <span>Samples</span>
-            <span>Pricing</span>
+           <Link to='/services' style={{ textDecoration: "none" }}><span>Services</span></Link> 
+           <Link to='/samples' style={{ textDecoration: "none" }}><span>Samples</span> </Link> 
+           <Link to='/pricing' style={{ textDecoration: "none" }}> <span>Pricing</span></Link> 
+            
 
           </div>
 
           <div>
-            <b className='ben'>Company</b>
-            <span>About Us</span>
-            <span>Contact us</span>
+            <b className='ben'>Company</b>            
+           <Link to='/aboutus' style={{ textDecoration: "none" }}><span>About Us</span></Link> 
+           <Link to='/contact' style={{ textDecoration: "none" }}><span>Contact Us</span> </Link> 
+         
           </div>
 
           <div>
             <b className='ben'>Legal</b>
-            <span>Terms & Conditions</span>
-            <span>Privacy Piolicy</span>
+            <Link to='/' style={{ textDecoration: "none" }}><span>Terms & Conditions</span></Link> 
+            <Link to='/' style={{ textDecoration: "none" }}><span>Privacy Piolicy</span> </Link> 
+          
           </div>
 
         </div>
@@ -52,12 +55,12 @@ function Footer() {
         </div>
         <div>{""}</div>
         <div className='d-flex align-items-center'>
-          <div className='mx-2'><a href="https://www.facebook.com/vistaeditzz">
+          <div className='mx-2'><a href="https://www.facebook.com/p/Vista-editz-100064031984655/">
             {facebookicon}
           </a></div>
-          <div className='mx-2'><a href="https://www.youtube.com/channel/UCR0rBe3RisbD_tXq-FMeTFA">
+          <div className='mx-2'><a href="https://www.youtube.com/@vistaedits8287">
             {youtubeicon}</a></div>
-          <div className='mx-2'><a href="https://www.instagram.com/vistaeditzz/">
+          <div className='mx-2'><a href="https://www.instagram.com/vista_editz/">
             {instaIcon}</a></div>
           <div className='mx-2'><a href="https://www.linkedin.com/in/aszen-technologies/">
             {linkedin}</a></div>

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom'
 import "./Realestate.css";
 import Header from "../../Components/Head/Header";
 import Footer from "../../Components/Footer/Footer";
@@ -374,7 +374,7 @@ function Realestate() {
           <source src={videos} type="video/mp4" />          
           </video> */}
 
-             <iframe src={videos} className="videoTag" ></iframe>
+             <iframe src={videos} allow="autoplay" className="videoTag" ></iframe>
 
 
           </div>

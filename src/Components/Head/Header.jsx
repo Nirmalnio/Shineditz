@@ -74,14 +74,14 @@ function Header() {
               <div className='dropbtn'>Photo/e-commerce&nbsp;{arrow}</div>
               <div className='dropdown-content'>
                 <Link className="drpdwnlink" to="/services"
-                // onClick={()=>handleOptionClick("ClippingPath")}
+                onClick={()=>handleOptionClick("ClippingPath")}
                 >Clipping path</Link>
                 <Link className="drpdwnlink" to="/services"
                   onClick={() => handleOptionClick("Color_Correction_Services")}
                 >Color correction</Link>
                 <Link className="drpdwnlink" to="/services"
                   onClick={() => handleOptionClick("ShadowCreation")}
-                >shadow correstion</Link>
+                >shadow Creation</Link>
                 <Link className="drpdwnlink" to="/services"
                   onClick={() => handleOptionClick("GhostMannequin")}
                 >Ghost removal</Link>
@@ -113,10 +113,11 @@ function Header() {
 
       <Offcanvas show={show} onHide={handleClose} /* responsive="lg" */ placement='end'>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>vistaeditz</Offcanvas.Title>
+          <Offcanvas.Title><img src={Logo} alt="vistaeditz" className='headerlogo'></img></Offcanvas.Title>
+         
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <div className='p-3 d-flex flex-column align-items-center mobdiv'>
+          <div className='p-3 d-flex flex-column align-items-center mobdiv'>-
             <Link to="/pricing"><div className='mob-options'>Pricing</div></Link>
             <Link to="/services"><div className='mob-options'>services</div></Link>
             <Link to="/contact" style={{ textDecoration: "none" }}>
