@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./samples.css"
 import Header from "../../Components/Head/Header";
 import Footer from "../../Components/Footer/Footer";
@@ -34,6 +34,10 @@ import img22 from "../../Assets/Images/Watermark/MTL Studio..-34.jpg"
 import img23 from "../../Assets/Images/Watermark/MTL Studio..-35.jpg"
 
 function Samples() {
+
+    useEffect(()=>{
+     window.scrollTo(0,0)
+    },[])
     return (
         <div className="samplemainDiv">
             <Header />

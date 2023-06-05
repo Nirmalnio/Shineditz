@@ -17,11 +17,12 @@ import imagemaskingbefore from "../../Assets/Images/After before/Image Masking/b
 import imagemaskingafter from "../../Assets/Images/After before/Image Masking/after.jpg"
 import PhotoRetouchingbefore from "../../Assets/Images/After before/Photoretouching/before.jpg"
 import PhotoRetouchingafter from "../../Assets/Images/After before/Photoretouching/after.jpg"
-
+import { useNavigate } from 'react-router';
 function Services() {
 
     const myDivRef = createRef();
-
+    
+    const Navigate = useNavigate()
     useEffect(() => {
         if (window.location.hash) {
             const targetId = window.location.hash.slice(1);
@@ -35,8 +36,14 @@ function Services() {
                 window.scrollTo({ top: y, behavior: "smooth" })
             }
         }
-    }, []);
+    }, [window.location.hash,document]);
 
+
+
+ 
+    const navigate = ()=>{
+        Navigate('/samples')
+    }
     return (
         <div >
             <Header />
@@ -58,7 +65,7 @@ function Services() {
                         />
                         </div>
 
-                        <div> <button className='viewsbtn'>View more Samples</button></div>
+                        <div> <button className='viewsbtn' onClick={navigate}>View more Samples</button></div>
 
                         {/* <p>Starting at <b>$ 0.30</b> per image</p> */}
                     </div>
@@ -85,7 +92,7 @@ function Services() {
                             style={{ width: "100%" }}
                         /></div>
                         <div>
-                            <button className='viewsbtn'>View more Samples</button>
+                            <button className='viewsbtn' onClick={navigate}>View more Samples</button>
                         </div>
                     </div>
                 </div>
@@ -113,7 +120,7 @@ function Services() {
 
                         </div>
                         <div>
-                            <button className='viewsbtn'>View more Samples</button>
+                            <button className='viewsbtn' onClick={navigate}>View more Samples</button>
                         </div>
                     </div>
                 </div>
@@ -141,7 +148,7 @@ function Services() {
                         />
                         </div>
                         <div>
-                            <button className='viewsbtn'>View more Samples</button>
+                            <button className='viewsbtn' onClick={navigate}>View more Samples</button>
                         </div>
                     </div>
                 </div>
@@ -167,7 +174,7 @@ function Services() {
                         />                        
                            </div>
                         <div>
-                            <button className='viewsbtn'>View more Samples</button>
+                            <button className='viewsbtn' onClick={navigate}>View more Samples</button>
                         </div>
                     </div>
                 </div>
@@ -196,125 +203,11 @@ function Services() {
                             style={{ width: "100%" }}
                         />                        
                            </div>
-                            <div> <button className='viewsbtn'>View more Samples</button>
+                            <div> <button className='viewsbtn' onClick={navigate}>View more Samples</button>
                             </div>
                         </div>
                     </div>
                 </section>
-
-
-                {/* 
-         <div className='price'><h2>Price that match your needs</h2></div>
-
-         <div className='price1'>
-            <div className='basic'>
-            <div className='basic1'>Basic image</div>
-            <div className='basic2'>Medium image</div>
-            <div className='basic3'> Complex Iage</div></div>
-            <br/><br/>
-            <div className='perimage'>
-            <div className='perimage1'>
-                <p><b>$0.30</b></p>
-                <p>per image</p><br/>
-                <img 
-                    className='shoeimg1'
-                    src={shoe1}></img>
-
-            </div>
-            <div className='perimage2'>
-            <p><b>$0.30</b></p>
-                <p>per image</p><br/>
-                <img 
-                    className='shoeimg2'
-                    src={shoe1}></img>
-            </div>
-            <div className='perimage3'>
-            <p><b>$0.30</b></p>
-                <p>per image</p><br/>
-                <img 
-                    className='shoeimg3'
-                    src={shoe1}></img>
-            </div></div>
-
-         </div><br/>
-         <button className='lets'>Let's talk</button><br/>
-         <div className='see'>
-            <h2>See Our User-Loved Samples Images</h2>
-         </div><br/><br/>
-         <div className='loved'>
-            <div className='loved1'>
-                <div className='img1'><img 
-                    className='shoeimg7'
-                    src={shoe1}></img></div>
-                <div className='img2'>
-                <img 
-                    className='shoeimg8'
-                    src={shoe1}></img>
-                </div>
-                <div className='img2'>
-                <img 
-                    className='shoeimg9'
-                    src={shoe1}></img>
-                </div>
-
-            </div>
-            <div className='loved2'>
-            <div className='img4'>
-            <img 
-                    className='shoeimg10'
-                    src={shoe1}></img>
-            </div>
-            <div className='img5'>
-            <img 
-                    className='shoeimg11'
-                    src={shoe1}></img>
-            </div>
-            <div className='img6'>
-            <img 
-                    className='shoeimg12'
-                    src={shoe1}></img>
-            </div>
-            </div>
-
-         </div><br/><br/>
-         <div className='view'>
-            <a>viewmore</a>
-         </div><br/> */}
-
-                {/* <div className='offer'>
-            <div className='ghost'>
-                <div className='ghost1'><h2>Checkout other services we offer</h2></div>
-                <div className='ghost2'>
-                    <div className='mannique'><h5>Ghost Mannequin</h5></div><br/>
-                    <div>{linkshare}</div>
-
-                    <div className='pic'><img 
-                    className='mann'
-                    src={shoe1}></img></div>
-                </div>
-                <div className='ghost3'>
-                <div className='mannique'><h5>Ghost Mannequin</h5></div><br/>
-                <div className='pic'> <img 
-                    className='mann'
-                    src={shoe1}></img></div>
-                </div>
-            </div>
-            <div className='masking'>
-                <div className='masking1'> <div className='mannique'><h5>Ghost Mannequin</h5></div><br/>
-                <div className='pic'> <img className='mann' src={shoe1}></img></div></div>
-                <div className='masking2'>
-                <div className='mannique'><h5>Ghost Mannequin</h5></div><br/>
-                <div className='pic'><img className='mann'src={shoe1}></img></div>
-                </div>
-                <div className='masking3'>
-                <div className='mannique'><h5>Ghost Mannequin</h5></div><br/>
-                <div className='pic'><img 
-                    className='mann'
-                    src={shoe1}></img></div>
-                </div>
-            </div>
-
-         </div> */}
             </div>
 
             <Footer />
