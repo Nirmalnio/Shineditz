@@ -66,7 +66,7 @@ function Services() {
 
 
 
-                <div className='clippingpath' id='PhotoRetouching ' >
+                <div className='clippingpath' id="PhotoRetouching" >
                     <div className='clippingpath1'>
                         <h3>Photo retouching Services</h3>
                         <p>Welcome to our professional photo retouching service! Our team of experienced photo editors is dedicated to enhancing your images and making them look their best.
