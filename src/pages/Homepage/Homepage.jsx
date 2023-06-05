@@ -17,45 +17,52 @@ import global from "../../Assets/Images/globe.png"
 import { handicon,Quick,data,Assured,iso,prices,clippingpath,masking,retouching,colorcorrection,showcorrection,Ghostmasking } from '../../Assets/icon';
 import Footer from '../../Components/Footer/Footer';
 import carouselimg from '../../Assets/Images/caursel.jpg'
+import { useNavigate } from 'react-router';
 
 function Homepage() {
 
     const [price,setprice] = useState("Clipping Services")
     
+    const naviagte = useNavigate()
 
     // const router = useHistory()
   const services = [
     {
       id: 1,
       headin: "Image Masking",
-      desp: "Prepare for future photo editing with image files you can use for text wrapping, background removal, print media, and the web.",
+      desp: "Clipping path photo editing service is a technique used in photo editing to isolate the subject of an image from the background.Our image masking services are available for a variety of industries, including e-commerce, photography, and graphic design.",
       background: "linear-gradient(165.22deg, #CF8BF3 -25.3%, rgba(253, 185, 155, 0.5) 116.66%), rgba(237, 237, 237, 0.2)",
-      image: serives1
+      image: serives1,
+      link: "/services#Imagemasking"
     },
     {
       id: 2,
       headin: "Ghost Mannequin",
-      desp: "Prepare for future photo editing with image files you can use for text wrapping, background removal, print media, and the web.",
+      desp: "Our ghost mannequin services can help you showcase your clothing products in a professional and visually appealing way. We use advanced techniques to remove the mannequin from your clothing photos and create a ghost mannequin effect, which makes the product appear as if it is being worn by an invisible model. ",
       background: "linear-gradient(165.22deg, #DAFFC4 -25.3%, #95EAFF 116.66%), rgba(237, 237, 237, 0.2)",
-      image: serives2
+      image: serives2,
+      link : "/services#GhostMannequin"
     }, {
       id: 3,
       headin: "Photo Retouching",
-      desp: "Prepare for future photo editing with image files you can use for text wrapping, background removal, print media, and the web.",
+      desp: "Welcome to our professional photo retouching service! Our team of experienced photo editors is dedicated to enhancing your images and making them look their best. We offer a wide range of photo retouching services, including color correction, skin smoothing, blemish removal, background removal, object removal, and more.",
       background: "linear-gradient(165.22deg, #FFB443 -25.3%, rgba(255, 242, 129, 0.5) 116.66%), rgba(237, 237, 237, 0.2)",
-      image: serives3
+      image: serives3,
+      link:  "/services#PhotoRetouching"
     }, {
       id: 4,
       headin: "Shadow Creation",
-      desp: "Prepare for future photo editing with image files you can use for text wrapping, background removal, print media, and the web.",
+      desp: "Our shadow creation services can help add depth and dimension to your photos. We use advanced techniques to create realistic shadows that can make your images look more professional and visually appealing.",
       background: "linear-gradient(168.36deg, #FFEBCC -22.35%, #FF5A55 121.11%), rgba(237, 237, 237, 0.2)",
-      image: serives4
+      image: serives4,
+      link : "/services#ShadowCreation"
     }, {
       id: 5,
       headin: "Color Correction ",
-      desp: "Prepare for future photo editing with image files you can use for text wrapping, background removal, print media, and the web.",
+      desp: "Our color correction services can help you achieve the perfect balance of colors in your images.Whether you need to correct color issues caused by lighting or white balance problems, our team of color correction experts can help.",
       background: "linear-gradient(165.22deg, #B2FEFA -25.3%, #4579FF 116.66%), rgba(237, 237, 237, 0.2)",
-      image: serives5
+      image: serives5,
+      link : "/services#Color_Correction_Services"
     },
 
   ]
@@ -217,7 +224,7 @@ console.log(Option,"options");
         <div className='serivescardContainer'>
           {services.map((item, id) => {
             return (
-              <div /* onClick={()=>router.push("/serives")} */
+              <div onClick={()=>naviagte(item?.link)}
                className='servisecard' key={id} style={{ background: `${item?.background}` }}>
                 <div className='servicetxts'>
                   <h5>{item?.headin}</h5>
@@ -264,6 +271,7 @@ console.log(Option,"options");
         
         {/*<<======= princing ==========>> */}
 
+     <div className='d-flex justify-content-center'>
         <div className='pricingplanDiv'>
           <h5>Choose a plan that suits you</h5>
           <div className='pricing-div'>
@@ -313,7 +321,7 @@ console.log(Option,"options");
 
           </div>
         </div>
-
+        </div>
 
         <div className='reviewsdiv'>
           <h5>1,850+ satisfied customers</h5>

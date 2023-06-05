@@ -34,7 +34,7 @@
    font-family: 'Open Sans';
    font-style: normal;
    font-weight: 500;
-   font-size: 18px; 
+   font-size: 17px; 
    cursor: pointer;
 }
 
@@ -137,7 +137,11 @@
     font-weight: 500;
     font-size: 18px; 
     margin: 12px 0px;
-    text-decoration: none;
+    text-decoration: none !important;
+   }
+
+   .mob-options:hover{
+    text-decoration: underline;
    }
 
    .mobdiv{
