@@ -57,7 +57,62 @@ function Pricing() {
          medium: 1.00,
          complex: 1.50 
         },
-     
+        {id:7,
+            image:Ghostmasking,
+            name:"HDRphotoediting",
+            basic: 0.40,
+            medium: 0.65,
+            complex: 1.00, 
+        },
+        {id:8,
+            image:Ghostmasking,
+            name:"Flash/Ambient Editing",
+            basic: 0.35,
+            medium: 0.50,
+            complex:0.60, 
+        },
+        {id:9,
+            image:Ghostmasking,
+            name:"Panorama Stitching",
+            basic: 3.0,
+            medium: 5.0,
+            complex: 15.00, 
+        },
+        {id:10,
+            image:Ghostmasking,
+            name:"Aerial Editing",
+            basic: 0.40,
+            medium: 0.65,
+            complex: 1.00, 
+        },
+        {id:11,
+            image:Ghostmasking,
+            name:"Sky,Lawn and Pool Replacement",
+            basic: 0.30,
+            medium: 0.40,
+            complex: 0.25, 
+        },
+        {id:12,
+            image:Ghostmasking,
+            name:"Pro Image Enhancements",
+            basic: 1.0,
+            medium: 3.0,
+            complex: 1.5, 
+        },
+        {id:13,
+            image:Ghostmasking,
+            name:"Weather Removal /Day to Dusk",
+            basic: 1.00,
+            medium: 0.65,
+            complex: 1.00, 
+        },
+        // {id:14,
+        //     image:Ghostmasking,
+        //     name:"Re video Editing",
+        //     basic: 0.4,
+        //     medium: 0.65,
+        //     complex: 1.00, 
+        // },
      ]
 
     // const Option = pricing.filter(item=>item?.name===price)
@@ -151,8 +206,7 @@ function Pricing() {
                                 </div>
                                 <div className="pricingsection" style={{border:"none"}}>
                                         <b>Complex image</b>
-                                        <span><b>${items?.complex.toFixed(2)}</b> /image</span>
-                                </div>
+                                        <span><b>${items?.complex.toFixed(2)}</b> /image</span>                              </div>
 
                             </div>
 

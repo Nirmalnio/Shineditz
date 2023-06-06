@@ -31,9 +31,9 @@
 .headermenu ul li{
    margin-left: 22px;
    color: #212123;
-   font-family: 'Open Sans';
+   /* font-family: 'Open Sans'; */
    font-style: normal;
-   font-weight: 500;
+   /* font-weight: 500; */
    font-size: 17px; 
    cursor: pointer;
 }
@@ -111,6 +111,7 @@
 
     .mobmenu{
      display: block;
+     cursor: pointer;
     }
 
     .contactus-btn2{

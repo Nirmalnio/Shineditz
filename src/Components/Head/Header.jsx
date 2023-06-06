@@ -59,7 +59,7 @@ function Header() {
                 >Color correction</Link>
                 <Link className="drpdwnlink" to="/services#ShadowCreation"
                   onClick={() => handleOptionClick("ShadowCreation")}
-                >shadow correstion</Link>
+                >shadow correction</Link>
                 <Link className="drpdwnlink" to="/services"
                   onClick={() => handleOptionClick("GhostMannequin")}
                 >Ghost removal</Link>
