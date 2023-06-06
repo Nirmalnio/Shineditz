@@ -126,7 +126,7 @@ function Pricing() {
                     <h1>Find the plan that fits you</h1>
                     <p>We have plans to match your needs for turnaround time, retouching features, and price point</p>
                 </div>
-                {/* <div className="cardsec">
+                <div className="cardsec">
                     <div>
                         <button onClick={()=>setprice("Clipping Services")}
                         className={price==="Clipping Services"?"buttoncardsactive":"buttoncards"}
@@ -182,9 +182,67 @@ function Pricing() {
                 <div className="submitbutton" >
                     <div> <button className='button3' type="submit">View Samples</button></div>
                     <div> <button className='button1' type="submit">Contact US</button></div>
-                </div> */}
+                </div>
 
-            {pricings?.map((items,id)=>{
+                <div className="cardsec">
+                    <div>
+                        <button onClick={()=>setprice("Clipping Services")}
+                        className={price==="Clipping Services"?"buttoncardsactive":"buttoncards"}
+                        >HDR Photo Editing</button>
+                    </div>
+                    <div>
+                        <button onClick={()=>setprice("Image Masking")}
+                        className={price==="Image Masking"?"buttoncardsactive":"buttoncards"}
+                        >Flash Ambient</button>
+                    </div>
+                    <div>
+                        <button onClick={()=>setprice("Photo Retouching")}
+                        className={price==="Photo Retouching"?"buttoncardsactive":"buttoncards"}
+                        >Panoroma stitching</button>
+                    </div>
+                    <div>
+                        <button onClick={()=>setprice("Color Correction")}
+                        className={price==="Color Correction"?"buttoncardsactive":"buttoncards"}
+                        >Sky,Lawn,Pool</button>
+                    </div>
+                    <div>
+                        <button onClick={()=>setprice("Shadow Correction")}
+                        className={price==="Shadow Correction"?"buttoncardsactive":"buttoncards"}
+                        >Pro image</button>
+                    </div>
+                    <div>
+                        <button onClick={()=>setprice("Ghost Masking")}
+                        className={price==="Ghost Masking"?"buttoncardsactive":"buttoncards"}
+                        >Weather Removal</button>
+                    </div>
+                </div>
+                <div className="flexbox">
+                    <div>
+                        <p className="gridtitle">Basic Image</p>
+                        <p><span className="basic">$ {Option[0]?.basic}</span>
+                            <div className="smalltxt">per image</div></p>
+                        <img src={bag}></img>
+                    </div>
+                    <div>
+                        <p className="gridtitle">Medium Image</p>
+                        <p><span className="basic">$ {Option[0]?.medium}</span>
+                            <div className="smalltxt">per image</div></p>
+                        <img src={schoolbag}></img>
+                    </div>
+                    <div>
+                        <p className="gridtitle">Complex Image</p>
+                        <p><span className="basic">$ {Option[0]?.complex}</span>
+                            <div className="smalltxt">per image</div></p>
+                        <img src={earings}></img>
+                    </div>
+
+                </div>
+                <div className="submitbutton" >
+                    <div> <button className='button3' type="submit">View Samples</button></div>
+                    <div> <button className='button1' type="submit">Contact US</button></div>
+                </div>
+
+            {/* {pricings?.map((items,id)=>{
                 return(
                             <div className="pricecardDiv" key={id}>
 
@@ -219,7 +277,7 @@ function Pricing() {
             })
                 
 
-            }
+            } */}
 
             </div>
           

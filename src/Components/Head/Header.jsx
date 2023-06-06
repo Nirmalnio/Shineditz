@@ -42,9 +42,31 @@ function Header() {
         </div>
         <div className='d-flex align-items-center'>
         <div className='headermenu'>
-          <ul>
+          <ul>            
+          <li className='dropdown'>
+              <div className='dropbtn'>Content&nbsp;{arrow}</div>
+              <div className='dropdown-content'>
+                <Link className="drpdwnlink" to="/services"
+                // onClick={()=>handleOptionClick("ClippingPath")}
+                >Content 1</Link>
+                 <Link className='drpdwnlink' to="/services"
+                  onClick={() => handleOptionClick("PhotoRetouching")}
+                >Content 2</Link>
+                <Link className="drpdwnlink" to="/services"
+                  onClick={() => handleOptionClick("Color_Correction_Services")}
+                >Content 3</Link>
+                <Link className="drpdwnlink" to="/services#ShadowCreation"
+                  onClick={() => handleOptionClick("ShadowCreation")}
+                >Content 4</Link>
+                <Link className="drpdwnlink" to="/services"
+                  onClick={() => handleOptionClick("GhostMannequin")}
+                >Content 5</Link>
+                <Link className="drpdwnlink" to="/services"
+                  onClick={() => handleOptionClick("Imagemasking")}
+                >Content 6</Link>               
+              </div>
+            </li>
 
-            
           <li className='dropdown'>
               <div className='dropbtn'>Photo/e-commerce&nbsp;{arrow}</div>
               <div className='dropdown-content'>
@@ -65,8 +87,7 @@ function Header() {
                 >Ghost removal</Link>
                 <Link className="drpdwnlink" to="/services"
                   onClick={() => handleOptionClick("Imagemasking")}
-                >Image Masking</Link>
-               
+                >Image Masking</Link>               
               </div>
             </li>
 
