@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import "./Realestate.css";
 import Header from "../../Components/Head/Header";
 import Footer from "../../Components/Footer/Footer";
-import ReactPlayer from "react-player";
+// import ReactPlayer from "react-player";
 import {
   ReactCompareSlider,
   ReactCompareSliderImage,
